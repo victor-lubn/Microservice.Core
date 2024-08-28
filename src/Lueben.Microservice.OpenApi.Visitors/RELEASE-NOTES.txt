@@ -1,0 +1,14 @@
+﻿v2.0.0
+- Update OpenApi library.
+
+v3.0.0
+- Updated target framework and dependencies.
+
+v3.0.1
+- Removed unused references.
+
+v3.0.2
+- Add .net6 target framework
+
+v4.0.0
+- Upgrade to .NET 8.0

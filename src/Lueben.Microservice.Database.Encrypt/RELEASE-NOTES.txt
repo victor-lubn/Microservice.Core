@@ -1,0 +1,9 @@
+﻿v1.0.0
+- Created package with shared attribute.
+v1.1.0
+- Added helper method to register SqlColumnEncryptionAzureKeyVaultProvider with ManagedIdentity credential by default.
+v1.1.1
+- Update Azure.Identity package version
+
+v2.0.0
+- Updated target framework and dependencies.

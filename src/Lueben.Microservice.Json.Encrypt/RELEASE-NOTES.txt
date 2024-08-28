@@ -1,0 +1,21 @@
+﻿v1.0.1
+- Fixed NamingStrategy in EncryptedStringPropertyResolver.
+It is taken now from ContractResolver of JsonConvert.DefaultSettings if it is derived from DefaultContractResolver.
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Updated dependendencies version
+
+v2.0.2
+- Add .net6 target framework
+
+v2.0.3
+- Updated dependencies.
+
+v2.0.4
+- Updated dependencies.
+
+v3.0.0
+- Updated target framework and dependencies.

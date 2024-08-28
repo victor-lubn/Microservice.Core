@@ -1,0 +1,19 @@
+v1.0.0
+- Initial release
+
+v1.1.0
+- IServiceCollection registration is supported by AutoFixture
+
+v1.1.1
+- bump Lueben.Integration.Testing.WireMock version to 1.0.3
+- fixed issues with AutoFixtureServiceProvider
+- added HttpContextAccessorMock to HttpFunctionIntegrationTest<TFunction> base class
+
+v1.1.2
+- fixed initialization of HttpContextAccessor mock
+
+v2.0.0
+- upgrade to .NET 7
+
+v2.0.1
+- Updated dependendencies version

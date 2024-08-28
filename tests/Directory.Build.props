@@ -1,0 +1,8 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))" />
+
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Remove="$(SolutionDir)\src\CodeAnalysis.src.globalconfig" />
+    <GlobalAnalyzerConfigFiles Include="$(SolutionDir)\tests\CodeAnalysis.test.globalconfig" />
+  </ItemGroup>
+</Project>

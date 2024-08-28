@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.Interceptors</PackageId>
+    <Version>2.0.3</Version>
+    <Title>Lueben.Microservice.Interceptors</Title>
+    <Decription>Lueben.Microservice.Interceptors</Decription>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>DF0305</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core.AsyncInterceptor" Version="2.1.0" />
+    <PackageReference Include="Lueben.Microservice.ApplicationInsights" Version="3.0.4" />
+    <PackageReference Include="Lueben.Microservice.CircuitBreaker" Version="2.0.4" />
+    <PackageReference Include="Lueben.Microservice.RetryPolicy" Version="2.0.2" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+  </ItemGroup>
+</Project>

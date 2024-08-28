@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Description>-</Description>
+        <Product>NuGet</Product>
+        <Company>Patrick Sadowski</Company>
+        <Year>$([System.DateTime]::Now.Year)</Year>
+        <Copyright>Copyright © Patrick Sadowski $(Year)</Copyright>
+        <NeutralLanguage>en-US</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- https://docs.microsoft.com/de-de/nuget/reference/msbuild-targets -->
+        <PackageProjectUrl>https://github.com/patricksadowski/NuGet.Dgml</PackageProjectUrl>
+        <Authors>$(Company)</Authors>
+    </PropertyGroup>
+</Project>

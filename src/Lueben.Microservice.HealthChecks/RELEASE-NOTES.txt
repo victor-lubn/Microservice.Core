@@ -1,0 +1,19 @@
+﻿﻿1.0.8
+- Introduce HealthCheckResponse and other models
+- Add logging logic for HealthCheckFunction
+- Inject IOptions to DefaultHealthCheckService
+
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+v2.0.2
+- Add Compile build action to content files
+v2.0.3
+- Add .net6 target framework
+v2.0.4
+- Removed MVC dependency
+
+v3.0.0
+- Updated target framework and dependencies.

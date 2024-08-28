@@ -1,0 +1,22 @@
+﻿v1.1.2 
+- Fixed issue with incorrect status of healtheck for non-jobs durable function.
+The issue happened because of incorrect filtering of instances to check status for.
+v1.1.3
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+v1.1.4
+- Exclude entity orchestrations from healthcheck analysis to prevent influence of circuit breakers orchestrations on the healthcheck.
+v2.0.0 
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Net.Http v. 4.3.4 to avoid vulnerability issues within transitive dependency System.Net.Http v. 4.3.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+v2.0.2
+- Updated dependendencies version
+v2.0.3
+- Add .net6 target framework
+v2.0.4
+- Bump Microsoft.Azure.WebJobs.Extensions.DurableTask to v2.9.2
+v2.0.5
+- Upgraded DurableTask to fix issue with CircuitBreaker large state messages
+https://github.com/Azure/azure-functions-durable-extension/pull/2390
+https://github.com/Azure/azure-functions-durable-extension/issues/2469

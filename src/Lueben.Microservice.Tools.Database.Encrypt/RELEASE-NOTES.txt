@@ -1,0 +1,4 @@
+﻿v1.0.0
+- Initial release
+v1.0.1
+- Update "Encrypt" package to fix leads build issue - system.IO.FileNotFoundException: Could not load file or assembly 'Lueben.Microservice.Database.Encrypt, Version=1.1.0.0

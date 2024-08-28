@@ -1,0 +1,14 @@
+v1.0.0
+- Initial release
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+
+v2.0.2
+- Add .net6 target framework
+
+v3.0.0
+- Updated target framework and dependencies.

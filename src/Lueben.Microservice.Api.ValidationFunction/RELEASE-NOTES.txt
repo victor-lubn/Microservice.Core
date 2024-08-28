@@ -1,0 +1,31 @@
+﻿v1.0.0
+- Initial release
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- bump PipelineFunction to v2.0.1
+
+v2.0.2
+- bump PipelineFunction to v2.0.2
+
+v2.0.3
+- Downgraded Microsoft.Azure.WebJobs.Core to v3.0.33
+
+v2.0.4
+- Add .net6 target frameworkz
+
+v2.0.5
+- Updated dependencies.
+
+v3.0.0
+- Updated target framework and dependencies.
+- Removed reference to Pipeline package.
+- Updated contract of GetValidatedRequest method.
+
+v3.0.1
+- Add validation middleware. It should be registered in the function to use.
+
+v3.0.2
+- Updated dependencies.

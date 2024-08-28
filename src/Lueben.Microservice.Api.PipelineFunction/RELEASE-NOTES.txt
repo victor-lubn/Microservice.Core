@@ -1,0 +1,29 @@
+﻿v1.0.4
+- fixed InvalidOperationException that is thrown in HttpRequestExtensions.GetHeaderValueOrDefault() method when header value is null
+v1.0.5
+- added protected virtual SetupPipelineFunction() in order to override setup of base class in descendants
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+!!! Unintentional breaking change (when updating from 2.0.0)
+- Got rid of `protected Exception exception` field in FunctionBaseExceptionFilter.
+- Added `exception` parameter of System.Exception type to `GetErrorResult` method. Use that exception parameter in switch cases in descendants of FunctionBaseExceptionFilter.
+
+v2.0.2
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+
+v2.0.3
+- Downgraded Microsoft.Azure.WebJobs.Core to v3.0.33
+
+v2.0.4
+- Add .net6 target framework
+
+v2.0.5
+- Updated dependencies.
+
+v2.0.6 
+- Updated webjobs package to fix newtonsoft transitive dependency vulnerability issue.
+
+v2.0.7
+- Updated dependendencies version

@@ -1,0 +1,13 @@
+﻿v1.0.5
+- Fixed memory leak https://www.asystad.net/memory-leak-with-castle-core-proxygenerator/
+v1.0.6
+- Use cb package with fixed dependencies list
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Add .net6 target framework
+v2.0.3
+- Updated dependencies.

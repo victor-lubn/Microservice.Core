@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
+        <PackageId>Lueben.Microservice.OpenApi</PackageId>
+        <Version>4.0.0</Version>
+        <Title>Lueben.Microservice.OpenApi</Title>
+        <Description>Lueben.Microservice.OpenApi</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Lueben.Microservice.OpenApi.Attributes" Version="4.0.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.OpenApi" Version="1.5.1" />
+    </ItemGroup>
+</Project>

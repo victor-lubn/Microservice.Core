@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+	    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	    <PackageId>Lueben.Microservice.AzureTableRepository</PackageId>
+	    <Version>2.0.3</Version>
+	    <Title>Lueben.Microservice.AzureTableRepository</Title>
+	    <Description>Lueben.Microservice.AzureTableRepository</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Data.Tables" Version="12.8.0" />
+        <PackageReference Include="Lueben.Microservice.Diagnostics" Version="2.0.2" />
+        <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Azure" Version="1.6.0" />
+        <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    </ItemGroup>
+
+</Project>

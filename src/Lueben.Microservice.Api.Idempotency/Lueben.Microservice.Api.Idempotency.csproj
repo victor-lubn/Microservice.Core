@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<PackageId>Lueben.Microservice.Api.Idempotency</PackageId>
+		<Version>3.0.2</Version>
+		<Title>Lueben.Microservice.Api.Idempotency</Title>
+		<Description>Lueben.Microservice.Api.Idempotency</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Data.Tables" Version="12.9.0" />
+		<PackageReference Include="Lueben.Microservice.Api.Middleware" Version="1.0.3" />
+		<PackageReference Include="Lueben.Microservice.Diagnostics" Version="3.0.0" />
+		<PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
+		<PackageReference Include="Lueben.Microservice.Api.ValidationFunction" Version="3.0.1" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.3.1" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Functions\IdempotencyCleanUpTimerFunction.cs" Pack="true" PackagePath="contentFiles\cs\any\Functions">
+			<BuildAction>Compile</BuildAction>
+		</Content>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿v1.0.0
+- Add DurableFunctionHistoryCleanUp function
+v1.0.1
+- Make function exportable
+v1.0.2
+- Rename CleanUp function 
+v1.0.3
+- Add handling of Function timeout exceptions
+v1.0.4
+- Remove RunOnStart option
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.RegularExpressions v. 4.3.1 and Newtonsoft.Json 13.0.2  to avoid vulnerability issues within transitive dependency System.Text.RegularExpressions v. 4.3.0, Newtonsoft.Json 11.0.2 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Add Compile build action to content files
+v2.0.3
+- Add .net6 target framework
+v2.0.4
+- Bump Microsoft.Azure.WebJobs.Extensions.DurableTask to v2.9.2
+v2.0.5
+- Updated dependendencies version
+v2.0.6
+- Upgraded DurableTask to fix issue with CircuitBreaker large state messages
+https://github.com/Azure/azure-functions-durable-extension/pull/2390
+https://github.com/Azure/azure-functions-durable-extension/issues/2469

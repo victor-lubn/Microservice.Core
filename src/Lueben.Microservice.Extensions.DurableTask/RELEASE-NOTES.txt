@@ -1,0 +1,15 @@
+v1.0.0
+- Initial version. Fixed issue with Microsoft.Azure.WebJobs.Extensions.DurableTask library after updating to 2.8.1:
+added AddDurableFunctions(IServiceCollection, bool) extension method for IServiceCollection. 
+Use it instead of AddDurableClientFactory in order to AzureWebJobsStorage connection string to work properly.
+
+v1.0.1
+- Upgraded DurableTask to fix issue with CircuitBreaker large state messages
+https://github.com/Azure/azure-functions-durable-extension/pull/2390
+https://github.com/Azure/azure-functions-durable-extension/issues/2469
+
+v2.0.0
+- Updated target framework and dependencies.
+- Added AddDurableTaskClient. This allows DurableTaskClient to be injected into constructors through Dependency Injection (DI).
+Or IDurableTaskClientProvider can be used in constructor through DI and access DurableTascClient using GetClient() method;
+

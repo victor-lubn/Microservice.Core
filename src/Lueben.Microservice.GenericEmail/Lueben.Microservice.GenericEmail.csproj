@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	    <PackageId>Lueben.Microservice.GenericEmail</PackageId>
+	    <Version>2.0.3</Version>
+	    <Title>Lueben.Microservice.GenericEmail</Title>
+	    <Description>Lueben.Microservice.GenericEmail</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lueben.Microservice.Diagnostics" Version="2.0.2" />
+      <PackageReference Include="Lueben.Microservice.RestSharpClient.Abstractions" Version="2.0.5" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>

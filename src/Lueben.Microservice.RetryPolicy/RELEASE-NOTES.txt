@@ -1,0 +1,12 @@
+﻿﻿1.0.5
+- Introduce RetryPolicyConstants static class
+- Add the logic of saving the number of retries to the context
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Updated dependendencies version
+
+v2.0.2
+- Add .net6 target framework

@@ -1,0 +1,8 @@
+﻿v1.0.0
+- Initial version.
+v2.0.0
+- Upgraded RestSharpClient dependency.
+v2.0.1
+- Upgraded RestSharpClient dependency.
+v3.0.0
+- Changed NotificationResponse to CreateNotificationResponse model in POST /notificationRequest.

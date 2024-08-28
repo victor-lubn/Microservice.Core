@@ -1,0 +1,39 @@
+﻿v2.0.0
+- Moved general constants and ApplicationTelemetryInitializer to separate package "Lueben.ApplicationInsights"
+- Removed ICustomPropertiesProvider interface and it is replaced in CustomDataPropertyTelemetryInitializer constructor with simple IList.
+- Simplified ApplicationLogOptions. Only configuration related properties were left. Please pay attention that LogLevel is removed too. Set LogLevel using standard AppInsight configuration property.
+- Moved HeadersTelemetryInitializer to seperate package as it can be reused by other apps without referencing this azure functions specific package.
+
+v2.0.2
+- Added FunctionApplicationTelemetryInitializer. 
+Comparing to ApplicationTelemetryInitializer it handles situation when scope properties are added as custom telemetry properties using Logger.BeginScope() in order to override default scope values set in configuration.
+This behavior only needed in azure functions.
+
+v2.0.3
+- Addede additional argument metrics for LogEvent method of LoggerService.
+- Added a new CustomDataMetricTelemetryInitializer.
+
+v2.0.4
+- Introduce CustomEventTelemetryInitializer.
+
+v3.0.0
+- Updated target framework and dependencies.
+
+v3.0.1
+- Added extension method 'AddApplicationInsightsTelemetry`
+- Added Lueben.Microservice.Extensions.Configuration package
+
+v3.0.2
+- updated Lueben.ApplicationInsights package version
+
+v3.0.3
+- Downgraded Microsoft.Azure.WebJobs.Core to v3.0.33
+
+v3.0.4
+- Add .net6 target framework
+
+v.3.0.5
+- Updated webjobs package to fix newtonsoft transitive dependency vulnerability issue.
+
+v4.0.0
+- Updated target framework and dependencies.

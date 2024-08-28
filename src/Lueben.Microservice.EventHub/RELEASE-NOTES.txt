@@ -1,0 +1,28 @@
+﻿v1.0.0
+- Added the implementation of EventHub.
+v1.0.1
+- Improve event hub to support batching.
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+v2.0.2
+- Add Extensions method to extract activity from EventData object
+v2.0.3
+- Add .net6 target framework
+v3.0.0
+- Update EventDataSender to use EventHubProducerClient that lifetime is managed by DI (https://learn.microsoft.com/en-us/dotnet/api/overview/azure/messaging.eventhubs-readme?view=azure-dotnet#registering-with-aspnet-core-dependency-injection)
+v3.0.1
+- Fix AddEventDataSender extension method. Each consumer should add  EventDataSender with expected scope and interceptors (if needed).
+v3.0.2
+- Fix AddEventDataSender extension method tp work without connectionstring. 
+v3.0.3
+- Update Azure.Identity package version
+v3.1.0
+- Extend EventHubSender to send event with populated properties: Type, Version and Sender.
+v3.1.1
+-Add possibility to resolve sender form Enviroment variable
+v3.1.2
+-Add Json setting to message serialization
+v3.1.3
+- Fix message serialization settings resovling

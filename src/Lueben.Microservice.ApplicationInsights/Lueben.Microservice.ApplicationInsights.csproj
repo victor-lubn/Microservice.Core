@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.ApplicationInsights</PackageId>
+	  <Version>4.0.0</Version>
+	  <Title>Lueben.Microservice.ApplicationInsights</Title>
+	  <Description>Lueben.Microservice.ApplicationInsights</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.ApplicationInsights" Version="3.0.0" />
+    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="1.3.0" />
+  </ItemGroup>
+
+</Project>

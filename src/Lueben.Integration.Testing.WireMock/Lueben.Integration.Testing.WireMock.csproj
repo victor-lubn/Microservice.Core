@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Integration.Testing.WireMock</PackageId>
+    <Version>2.0.0</Version>
+    <Title>Lueben.Integration.Testing.WireMock</Title>
+    <Description>Lueben.Integration.Testing.WireMock</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WireMock.Net" Version="1.5.16" />
+  </ItemGroup>
+
+</Project>

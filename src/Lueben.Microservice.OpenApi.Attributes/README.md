@@ -1,0 +1,1 @@
+OpenAPI attributes for Azure Functions

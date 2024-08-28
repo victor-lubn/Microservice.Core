@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.AzureTableRepository.HealthCheck</PackageId>
+	  <Version>2.0.3</Version>
+	  <Title>Lueben.Microservice.AzureTableRepository.HealthCheck</Title>
+	  <Description>Lueben.Microservice.AzureTableRepository.HealthCheck</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.AzureTableRepository" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.14" />
+  </ItemGroup>
+
+</Project>

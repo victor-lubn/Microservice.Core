@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.EntityFunction</PackageId>
+	  <Version>3.0.1</Version>
+	  <Title>Lueben.Microservice.EntityFunction</Title>
+	  <Description>Lueben.Microservice.EntityFunction</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="Lueben.Microservice.Api.ValidationFunction" Version="3.0.1" />
+    <PackageReference Include="Lueben.Microservice.Mediator" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

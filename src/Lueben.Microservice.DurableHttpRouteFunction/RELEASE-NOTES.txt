@@ -1,0 +1,20 @@
+﻿v1.0.7
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+v1.0.8
+- Fix: Resolve function key from configuration if configuration option is passed instead of function key
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+v2.0.0 
+- Updated target framework and dependencies.
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- updated Lueben.Microservice.DurableFunction to v2.0.2
+v2.0.3
+- Add Compile build action to content files
+v2.0.4
+- Add .net6 target framework
+v2.0.5
+- Fix: Resolve function key from configuration if configuration option is passed instead of function key
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+v2.0.6
+- Do not use TrackUsingCorrelationTraceContext with V2 version of durableTask tracing.

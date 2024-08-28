@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.Localization</PackageId>
+	  <Version>3.0.0</Version>
+	  <Title>Lueben.Microservice.Localization</Title>
+	  <Decription>Lueben.Microservice.Localization</Decription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.Api.Middleware" Version="1.0.3" />
+    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

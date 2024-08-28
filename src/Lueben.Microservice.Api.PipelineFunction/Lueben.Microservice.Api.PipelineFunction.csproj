@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.Api.PipelineFunction</PackageId>
+    <Version>2.0.7</Version>
+    <Title>Lueben.Microservice.Api.PipelineFunction</Title>
+    <Description>Lueben.Microservice.Api.PipelineFunction</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.Api.Models" Version="2.1.0" />
+    <PackageReference Include="Lueben.Microservice.Serialization" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.37" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

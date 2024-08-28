@@ -1,0 +1,11 @@
+﻿v2.0.0
+- Replaced GenericEmailServiceApiUrl, GenericDynamicEmailServiceApiUrl, GenericOnBehalfEmailServiceApiUrl, GenericEmailServiceVersionUrl with GenericEmailServiceApiBaseUrl in GenericEmailServiceOptions
+- Removed Scope and ApiVersion from GenericEmailServiceOptions - use ApimClientOptions instead.
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Add .net6 target framework
+v2.0.3
+- Updated dependendencies version

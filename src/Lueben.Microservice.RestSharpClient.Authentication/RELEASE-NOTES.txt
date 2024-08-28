@@ -1,0 +1,17 @@
+﻿v1.0.0
+- Confidential client and FunctionKeyAuthenticator moved here from RestSharpClient package.
+- Removed Options Refreshing from Confidential client to avoid extra dependency and because confidential options usually are not changed,
+and when they are changed then anyway token cache shold be invalidated in this case.
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated extension methods to be applied to IRestSharpClient instead of deprecated IRestClient
+v2.0.2
+- Updated dependendencies version
+v2.0.3
+- Add .net6 target framework
+v2.0.4
+- replaced 'sync over async' for with true async auth token retrieval for ClientCredentialsAuthenticator
+v2.0.5
+- Update Microsoft.Identity.Client package

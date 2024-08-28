@@ -1,0 +1,47 @@
+﻿v1.0.3
+- Added support response without value in TryExecuteFunction method,
+if there is no response object body then take type from object result, but not from value
+
+v1.0.4
+- Improved code readability.
+
+v1.0.5
+- Change return status code to 201
+
+v1.0.7
+- Add custom response status code (201 by default) and JsonBodyNotValidException for empty body
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- bump Lueben.Microservice.Api.ValidationFunction to v2.0.1
+
+v2.0.2
+- bump Lueben.Microservice.Api.ValidationFunction to v2.0.3
+- bump Lueben.Microservice.Extensions.Configuration to v2.0.1
+
+v2.0.3
+- Add Compile build action to content files
+
+v2.0.4
+- Add .net6 target framework
+
+v2.0.5
+- Updated dependencies.
+
+v2.0.6
+- Updated dependencies.
+
+v2.0.7
+- Add posibility to execute FunctioonalWrapper with optional idempotency in header.
+
+v3.0.0
+- Updated target framework and dependencies.
+- IdempotencyExceptionFilter was converted to IdempotencyExceptionMiddleware.
+
+v3.0.1
+- Updated dependencies.
+
+v3.0.2
+- Updated dependencies.

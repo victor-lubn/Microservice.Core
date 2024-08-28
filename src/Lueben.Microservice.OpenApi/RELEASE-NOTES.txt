@@ -1,0 +1,35 @@
+﻿v1.0.5
+- Add Custom document helper
+
+v2.0.0
+- Update OpenApi library. 
+- Remove IDocumentHandler implementations.
+- Add DocumentFilters to change Document structure before rendering.
+
+v3.0.0
+- Added .NET 7 as target framework
+- removed .nuspec file
+- moved all package info to csproj
+- updated Microsoft.Azure.WebJobs.Extensions.OpenApi.Core to v1.5.1 & YamlDotNet to v12.3.1
+
+v3.0.1
+- Removed unused references.
+- Updated Lueben.Microservice.OpenApi.Attributes to v3.0.1
+
+v3.0.2
+- Add .net6 target framework
+
+v.3.0.3
+- Fixed base path for openapisettings.json file
+
+v3.1.0
+- Added Operations filter to generate openapi specification only for a list of operations.
+
+v3.2.0
+- Added Exclude operations filter to generate openapi specification.
+
+v3.2.1
+- Updated dependendencies version
+
+v4.0.0
+- Use Function.Worker version of OpenApi library.

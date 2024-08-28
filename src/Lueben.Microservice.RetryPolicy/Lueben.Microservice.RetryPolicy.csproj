@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	    <PackageId>Lueben.Microservice.RetryPolicy</PackageId>
+	    <Version>2.0.2</Version>
+	    <Title>Lueben.Microservice.RetryPolicy</Title>
+	    <Description>Lueben.Microservice.RetryPolicy</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
+        <PackageReference Include="Polly" Version="7.2.3" />
+    </ItemGroup>
+
+</Project>

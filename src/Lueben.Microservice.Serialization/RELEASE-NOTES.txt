@@ -1,0 +1,16 @@
+v1.0.0
+- Initial release
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Add .net6 target framework.
+
+v2.1.0 - Added StringToListConverter converter.
+
+
+v2.1.1 - Improve StringToListConverter converter to trim values and use JsonSerializer under hood.
+
+v3.0.0
+- Updated target framework and dependencies.

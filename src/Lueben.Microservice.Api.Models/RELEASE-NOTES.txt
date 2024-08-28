@@ -1,0 +1,17 @@
+﻿v1.0.0
+- Initial release.
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Add .net6 target framework.
+
+v2.1.0
+- Add IPaginatedResponse.
+
+v2.2.0
+- Add ErrorResultConflict.
+
+v3.0.0
+- Updated target framework and dependencies.

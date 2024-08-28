@@ -1,0 +1,34 @@
+﻿v2.0.0
+- Moved Authentication to seperate package.
+- Removed JsonConvertSerializer.
+v2.0.1
+- Fixed project references.
+v2.0.2
+- Add PopulateHeaders method to RestRequestExtensions class.
+v2.0.3
+- Updated RestSharpClientFactory to be able to create client based on the passed configuration section name.
+v2.0.4
+- Made Create method based on configuration name a virtual one
+v2.0.5
+- Updated dependencies version
+v2.0.6
+- Fixed error message in case of unsuccessful request: log request.Resource in error message if response.ResponseUri is null.
+v3.0.0
+- Update target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v3.0.1
+- Updated RestSharpClient according to updated contact: implemented SetSetializer method
+v3.0.2
+- Updated RestSharpClient according to updated contact
+v3.0.3
+- Updated Microsoft extension references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+v3.0.4
+- Add .net6 target framework
+v3.0.5
+- Add handling of Timeouts in RestClientApiException
+v4.0.0
+- Use httpclient factory to limit number of http connections to same resource.
+v4.1.0
+- Add handling of System.Net.Sockets.SocketException with 0 StatusCode.
+v4.1.1
+- Deleting logging Authorization header when execution of request fails.

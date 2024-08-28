@@ -1,0 +1,39 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))" />
+
+  <!--Package Common Properties -->
+  <PropertyGroup>
+    <Authors>Lueben Joinery</Authors>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+
+    <PackageProjectUrl>https://dev.azure.com/LuebenJoinery/Lueben/_wiki/wikis/Lueben.wiki/914/How-to-Create-Nuget-packages</PackageProjectUrl>
+
+
+    <!--
+    <RepositoryUrl>https://dev.azure.com/LuebenJoinery/Lueben/_git/Lueben.Microservice.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild>True</ContinuousIntegrationBuild>
+
+    <!-- https://learn.microsoft.com/en-us/dotnet/fundamentals/package-validation/overview -->
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <!-- PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion> -->
+
+    <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="readme.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="$(SolutionDir)\src\CodeAnalysis.src.globalconfig" />
+  </ItemGroup>
+
+</Project>

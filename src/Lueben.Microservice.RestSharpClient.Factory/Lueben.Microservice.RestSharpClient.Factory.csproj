@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.RestSharpClient.Factory</PackageId>
+	  <Version>3.0.2</Version>
+	  <Title>Lueben.Microservice.RestSharpClient.Factory</Title>
+	  <Description>Lueben.Microservice.RestSharpClient.Factory</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
+    <PackageReference Include="Lueben.Microservice.Interceptors" Version="2.0.3" />
+    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
+    <PackageReference Include="Lueben.Microservice.RestSharpClient.Authentication" Version="2.0.5" />
+    <PackageReference Include="Lueben.Microservice.Serialization" Version="2.0.1" />
+  </ItemGroup>
+
+</Project>

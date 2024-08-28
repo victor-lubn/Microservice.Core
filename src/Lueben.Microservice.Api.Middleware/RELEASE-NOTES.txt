@@ -1,0 +1,11 @@
+﻿v1.0.0
+- Added the implementation of base API functions middleware.
+
+v1.0.1
+- Extend list of supported framework versions.
+
+v1.0.2
+- Add commonly used constants.
+
+v1.0.3
+- Add HttpContextSetupMiddleware that populates HttpContext fot HttpContextAccessor from Function context.

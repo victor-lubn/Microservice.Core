@@ -1,0 +1,24 @@
+﻿﻿1.0.0
+- Added extensions method that adds the support of file logs.
+
+v1.0.1
+- Removed LogConstants class.
+
+v1.0.2
+- Removed AddTelemetryLogging extension method
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Downgraded Microsoft.Extensions.Logging to v6.0.0
+- Updated Lueben.Microservice.Extensions.Configuration to v2.0.1
+
+v2.0.2
+- Add .net6 target framework
+
+v2.0.3
+-  Set the default minimum file log level to 'Error'
+
+v3.0.0
+- Updated target framework and dependencies.

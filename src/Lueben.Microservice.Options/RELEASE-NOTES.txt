@@ -1,0 +1,24 @@
+﻿v1.0.0
+- Initial release
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Updated Microsoft.Extensions* references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+
+v2.0.2
+- Add .net6 target framework
+
+v2.1.0
+- Added IOptions<AppConfigurationRefreshOptions> to RefreshedOptionsManager in order to make possible configuring refresh intervals from config (for unit testing)
+!!! UNINTENTIONAL BREAKING CHANGES: performed project structuring and files renaming. So, some of the classes \ methods changed their namespaces and would need reimporting.
+
+v2.2.0
+- Add AddLuebenAzureAppConfiguration extension which uses ManagedIdentityCredential (MI) by default so all functions by default will use MI.
+
+v2.2.1
+- Update Azure.Identity package version
+
+v3.0.0
+- Updated target framework and dependencies.

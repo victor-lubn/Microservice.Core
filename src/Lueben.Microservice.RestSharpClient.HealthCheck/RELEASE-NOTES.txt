@@ -1,0 +1,25 @@
+﻿﻿v1.0.2
+- Add IsRetryLogicDisabled property for RestSharpClientOptions
+- Add logging logic for ApiHealthCheck
+- Add additional arguments for AddApiHealthCheck extension method
+
+v2.0.1
+- Migrate library to use Lueben.Microservice.RestSharpClient 
+
+v2.0.2
+- Update contract of AddApiHealthCheck extension method with configuration section name,
+
+v3.0.0
+- Updated target framework and dependencies.
+
+v3.0.1
+- Updated dependendencies version
+
+v3.0.2
+- Add .net6 target framework
+
+v4.0.0
+- Upgraded RestSharpClient dependency
+
+v4.0.1
+- Upgraded RestSharpClient dependency

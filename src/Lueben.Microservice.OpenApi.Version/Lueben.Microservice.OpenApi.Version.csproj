@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.OpenApi.Version</PackageId>
+    <Version>4.0.0</Version>
+    <Title>Lueben.Microservice.OpenApi.Version</Title>
+    <Description>Lueben.Microservice.OpenApi.Version</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Core" Version="3.0.41" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Functions\VersionFunction.cs" PackagePath="contentFiles\cs\any\Functions">
+	    <BuildAction>Compile</BuildAction>
+    </Content>
+  </ItemGroup>
+</Project>

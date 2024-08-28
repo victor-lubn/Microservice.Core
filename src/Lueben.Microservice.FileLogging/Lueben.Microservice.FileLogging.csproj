@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.FileLogging</PackageId>
+	  <Version>3.0.0</Version>
+	  <Title>Lueben.Microservice.FileLogging</Title>
+      <Decription>Lueben.Microservice.FileLogging</Decription>
+  </PropertyGroup>
+	<ItemGroup>
+    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+  </ItemGroup>
+</Project>

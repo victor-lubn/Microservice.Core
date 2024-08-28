@@ -1,0 +1,396 @@
+{
+  "consumer": {
+    "name": "LuebenCore"
+  },
+  "provider": {
+    "name": "Lueben"
+  },
+  "interactions": [
+    {
+      "description": "Request with 'Email' more than 50 characters",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendDynamicEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "parameters": "Body",
+          "to": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@email.com",
+          "source": "OnlineAccountApplication",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The field Email exceeds maximum length of 50 characters."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with empty not required fields",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "to": "address@email.com",
+          "source": "LuebenCore",
+          "subject": "Subject"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_SUCCESS",
+          "message": "Thank you for submitting your request"
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'To' for send on behalf of service email",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmailOnBehalfOfService",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "source": "OnlineAccountApplication",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The To field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Subject' for send on behalf of service email",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmailOnBehalfOfService",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "to": "address@email.com",
+          "source": "OnlineAccountApplication",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Subject field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Source' for send on behalf of service email",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmailOnBehalfOfService",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "to": "address@email.com",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Source field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Body' for send on behalf of service email",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmailOnBehalfOfService",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "to": "address@email.com",
+          "source": "OnlineAccountApplication",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Body field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Body'",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "to": "address@email.com",
+          "source": "OnlineAccountApplication",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Body field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Source'",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "to": "address@email.com",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Source field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'To'",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "source": "OnlineAccountApplication",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The To field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Request with 1 empty required field 'Subject'",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "to": "address@email.com",
+          "source": "OnlineAccountApplication",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The Subject field is required."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Version request",
+      "request": {
+        "method": "get",
+        "path": "/GenericEmailService/GetVersion"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "1"
+      }
+    },
+    {
+      "description": "Request with 2 empty required fields 'To' and 'Source'",
+      "request": {
+        "method": "post",
+        "path": "/GenericEmailService/SendEmail",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "body": "Body",
+          "subject": "Subject",
+          "emailType": "Submitted"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": "STATUS_FAILED",
+          "message": "Unable to submit your request this time",
+          "errors": [
+            {
+              "code": 400,
+              "messages": [
+                "The To field is required.",
+                "The Source field is required."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+﻿v1.0.0 - Replaces old AzureTableManager package. Using TableClient from new Azure.Data.Tables package.
+v1.0.1 - fix package references. Added diagnostics package.
+v2.0.0 
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Net.Http v. 4.3.4 to avoid vulnerability issues within transitive dependency System.Net.Http v. 4.3.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Add .net6 target framework
+v2.0.3
+- Updated dependendencies version

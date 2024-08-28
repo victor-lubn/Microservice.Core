@@ -1,0 +1,47 @@
+﻿v1.0.4
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+v1.0.5
+- Add base OrchestratorFunction
+v1.0.6
+- Added ReplaySafeLoggerService
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- fixed issue with Microsoft.Azure.WebJobs.Extensions.DurableTask library after updating to 2.8.1:
+added AddDurableFunctions(IServiceCollection, bool) extension method for IServiceCollection. 
+Use it instead of AddDurableClientFactory in order to AzureWebJobsStorage connection string to work properly.
+
+v2.0.3
+- Add .net6 target framework
+
+v2.0.4
+- Bump Microsoft.Azure.WebJobs.Extensions.DurableTask to v2.9.2
+
+v2.0.5
+- moved fix of v2.0.2 to a separate package - Lueben.Microservice.Extensions.DurableTask
+- added dependency on Lueben.Microservice.Extensions.DurableTask v1.0.0
+
+v2.0.6
+- Add HandleRestClientExceptions method for apiCall with the result
+
+v2.0.7
+- Removed class constraint from generic method CallDurableActivity.
+
+v2.0.8 
+- Upgraded DurableTask to fix issue with CircuitBreaker large state messages
+https://github.com/Azure/azure-functions-durable-extension/pull/2390
+https://github.com/Azure/azure-functions-durable-extension/issues/2469
+
+v3.0.0
+- Upgraded RestSharpClient dependency.
+
+v3.0.1
+- Add useCorrelationTraceContext parameter for the HandleErrors method
+
+v3.1.0
+- Extend WorkflowOptions with new properties: BackoffCoefficient, ActivityMaxRetryInterval that allow to adjust retry logic of durable task.
+
+v3.1.1
+- Fix default values of WorkflowOptions

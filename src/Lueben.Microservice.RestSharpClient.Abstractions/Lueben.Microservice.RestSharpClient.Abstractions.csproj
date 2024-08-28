@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.RestSharpClient.Abstractions</PackageId>
+	  <Version>2.0.5</Version>
+	  <Title>Lueben.Microservice.RestSharpClient.Abstractions</Title>
+	  <Description>Lueben.Microservice.RestSharpClient.Abstractions</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="108.0.3" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.CircuitBreaker</PackageId>
+	  <Version>2.0.7</Version>
+	  <Title>Lueben.Microservice.CircuitBreaker</Title>
+	  <Description>Lueben.Microservice.CircuitBreaker</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.12.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="Polly.Caching.Memory" Version="3.0.2" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="CircuitBreakerFunctions.cs" Pack="true" PackagePath="contentFiles\cs\any\CircuitBreaker">
+			<BuildAction>Compile</BuildAction>
+		</Content>
+		<Content Include="DurableCircuitBreakerExternalApi.cs" Pack="true" PackagePath="contentFiles\cs\any\CircuitBreaker">
+			<BuildAction>Compile</BuildAction>
+		</Content>
+	</ItemGroup>
+
+</Project>

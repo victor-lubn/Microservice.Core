@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.RestSharpClient.RetryPolicy</PackageId>
+	  <Version>3.0.1</Version>
+	  <Title>Lueben.Microservice.RestSharpClient.RetryPolicy</Title>
+	  <Description>Lueben.Microservice.RestSharpClient.RetryPolicy</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
+    <PackageReference Include="Lueben.Microservice.RetryPolicy" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

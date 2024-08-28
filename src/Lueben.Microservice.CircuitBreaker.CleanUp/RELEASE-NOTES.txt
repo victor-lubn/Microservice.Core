@@ -1,0 +1,7 @@
+﻿﻿1.0.0 - Initial version.
+
+1.0.1 - Reworked cb history analysis.
+
+1.0.2 - fix history table name.
+
+1.0.3 - Remove CB marked as deleted. Analyse InputBlobName in addition to CorrelationBlobName.

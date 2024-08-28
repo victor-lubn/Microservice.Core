@@ -1,0 +1,28 @@
+﻿﻿1.0.6
+- Refactor logging logic inside DurableCircuitBreakerClient
+- Introduce LoggerExtensions class 
+1.0.8
+- Update Microsoft.Azure.WebJobs.Extensions.DurableTask library version
+1.0.9 
+- Fix durabletask version in nuspec
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Net.Http v. 4.3.4 and Newtonsoft.Json 13.0.2  to avoid vulnerability issues within transitive dependency System.Net.Http v. 4.3.0, Newtonsoft.Json 11.0.2 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Added direct dependency for  System.Text.RegularExpressions v. 4.3.1 to avoid vulnerability issues within transitive dependency System.Text.RegularExpressions v. 4.3.0
+v2.0.2
+- Updated dependendencies version
+v2.0.3
+- Add Compile build action to content files
+v2.0.4
+- Add .net6 target framework
+v2.0.5
+- Bump Microsoft.Azure.WebJobs.Extensions.DurableTask to v2.9.2
+v2.0.6
+- Change Logging level of the Retriable operation failed from Error to Warning.
+- Change Logging level of the Circuit Breaker Open state from Error to Warning.
+- Change CircuitBreaker Logging Messages level from Information to Debug.
+v2.0.7
+- Upgraded DurableTask to fix issue with CircuitBreaker large state messages
+https://github.com/Azure/azure-functions-durable-extension/pull/2390
+https://github.com/Azure/azure-functions-durable-extension/issues/2469

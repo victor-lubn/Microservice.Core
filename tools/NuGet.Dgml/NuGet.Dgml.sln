@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{337F3F25-316E-445B-A78C-A70B1C21ECC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E3D06EAF-9EA3-4F48-9D4F-FE667F0331C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet.Dgml", "src\NuGet.Dgml\NuGet.Dgml.csproj", "{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet.Dgml.Tests", "tests\NuGet.Dgml.Tests\NuGet.Dgml.Tests.csproj", "{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{976589CE-6D42-45DB-A932-3614247451E4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		src\Nuget.Dgml.Generator\bin\Debug\net6.0\LuebenCore.dgml = src\Nuget.Dgml.Generator\bin\Debug\net6.0\LuebenCore.dgml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nuget.Dgml.Generator", "src\Nuget.Dgml.Generator\Nuget.Dgml.Generator.csproj", "{2B649AD5-5738-4382-BD4D-E501120A6F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B649AD5-5738-4382-BD4D-E501120A6F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B649AD5-5738-4382-BD4D-E501120A6F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B649AD5-5738-4382-BD4D-E501120A6F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B649AD5-5738-4382-BD4D-E501120A6F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CDA2E10-CEC5-4AB9-9D95-3EA31BA6755B} = {337F3F25-316E-445B-A78C-A70B1C21ECC8}
+		{FD97D5AB-BAEE-46B1-BA57-A8B489582D9B} = {E3D06EAF-9EA3-4F48-9D4F-FE667F0331C6}
+		{2B649AD5-5738-4382-BD4D-E501120A6F5E} = {337F3F25-316E-445B-A78C-A70B1C21ECC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30DD3AEB-C0F4-4D13-8F4C-5F146E8950C4}
+	EndGlobalSection
+EndGlobal

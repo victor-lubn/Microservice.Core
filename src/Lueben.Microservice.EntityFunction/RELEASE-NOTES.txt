@@ -1,0 +1,37 @@
+﻿v1.0.0
+- Added the implementation of EntityFunction.
+v1.0.1
+- Introduced generic Id argument for all the methods of EntityFunction
+v1.0.2
+- Added CreateWithoutResponse method for EntityFunction
+v1.0.3
+- Fixed the issue with FluentValidation library version
+v1.0.4
+- Downgrade FluentValidation library version
+v1.0.5
+- Added Put method that takes validator as an argument
+v1.0.6
+- Added Put method that returns ObjectResult
+v1.0.7
+- Added Put method that returns ObjectResult and takes validator as an argument
+v1.0.8
+- Add Deleted method that returns ObjectResult
+v1.0.9
+- Removed anonymous object from ObjectResult and CreatedObjectResult to avoid problem with deserialization
+v1.0.10
+- Added Get method that allows to return all entities by pages
+v1.0.11
+- Rename property of ObjectResult, CreateObjectResult from Id to Data
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- bump Lueben.Microservice.Api.ValidationFunction to v2.0.1
+v2.0.4
+- Add .net6 target framework
+v2.0.5
+- Updated dependencies.
+v3.0.0
+- Updated target framework and dependencies.
+- Updated contract of GetValidatedRequest method and entity manipilation methods: HttpRequestData obeject is required to be passed as a parameter.
+v3.0.1
+- Updated dependencies.

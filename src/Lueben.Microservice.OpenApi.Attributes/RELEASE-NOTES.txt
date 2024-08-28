@@ -1,0 +1,17 @@
+﻿v2.0.0
+- Update OpenApi library.
+
+v3.0.0.
+- upgrade to .NET 7
+
+v3.0.1
+- Removed unused references.
+
+v3.0.2
+- Add .net6 target framework
+
+v3.1.0
+- Added base for pageable responses.
+
+v4.0.0
+- Upgrade to .NET 8.0

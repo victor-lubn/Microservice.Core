@@ -1,0 +1,29 @@
+﻿v1.0.0
+- Initial release.
+v1.0.1
+- Updated MicroserviceRestSharpClientFactory to provide possibility to create client based on the passed configuration section name
+v1.0.2
+- Updated dependencies version
+v1.0.3
+- Fixed adding interceptors in the factory
+v1.0.4
+- Update interceptors package reference to fix memory leaks
+v1.0.5
+- #64095 Update interceptors package to fix null reference issue happened because of using different versions of durabletask package.
+
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Add .net6 target framework
+v2.0.3
+- Updated dependendencies version
+v2.0.4
+- Updated dependendencies version to replace 'sync over async' for with true async auth token retrieval for ClientCredentialsAuthenticator
+v3.0.0
+- Use RestSharpClient 3.0.0 using HttpClientFactory to avoid socket exceptions. https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests
+v3.0.1
+- Upgraded RestSharpClient dependency.
+v3.0.2
+- Upgraded RestSharpClient dependency.

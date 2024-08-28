@@ -1,0 +1,17 @@
+﻿v1.0.0
+- Initial release
+
+v2.0.0
+- Updated target framework and dependencies.
+
+v2.0.1
+- Updated dependendencies version
+
+v2.0.2
+- Add .net6 target framework
+
+v3.0.0
+- Upgraded RestSharpClient dependency
+
+v3.0.1
+- Upgraded RestSharpClient dependency

@@ -1,0 +1,15 @@
+﻿v1.0.1
+- Update IRestSharpClientFactory to be able to create client based on the passed options
+v2.0.0
+- Updated target framework and dependencies.
+- Added direct dependency for  System.Text.Encodings.Web v. 7.0.0 to avoid vulnerability issues within transitive dependency System.Text.Encodings.Web v. 4.5.0 (https://learn.microsoft.com/en-us/security-updates/securityadvisories/2017/4021279#fixing-transitive-dependencies-projectjsonvs2015)
+v2.0.1
+- Extended IRestSharpClient contract
+v2.0.2
+- Updated IRestSharpClient contract
+v2.0.3
+- Extended IRestSharpClient contract
+v2.0.4
+- Updated references to v6 to avoid runtime exceptions in Azure functions that run in-process with the runtime
+v2.0.5
+- Add .net6 target framework

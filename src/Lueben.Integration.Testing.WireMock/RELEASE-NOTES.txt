@@ -1,0 +1,14 @@
+v1.0.0
+- Initial version
+
+v1.0.1
+- fixed writing to pact file in parallel
+
+v1.0.2
+- fixed namespaces
+
+v1.0.3
+- fixed saving pacts by providers
+
+v2.0.0
+- upgrade to .NET 7

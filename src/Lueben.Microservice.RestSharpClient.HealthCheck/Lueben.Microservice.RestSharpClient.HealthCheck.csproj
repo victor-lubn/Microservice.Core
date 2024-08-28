@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <PackageId>Lueben.Microservice.RestSharpClient.HealthCheck</PackageId>
+	  <Version>4.0.1</Version>
+	  <Title>Lueben.Microservice.RestSharpClient.HealthCheck</Title>
+	  <Description>Lueben.Microservice.RestSharpClient.HealthCheck</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.14" />
+  </ItemGroup>
+
+</Project>

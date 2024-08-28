@@ -1,0 +1,114 @@
+name: $(TeamProject)_$(Build.DefinitionName)_$(Rev:r)
+
+trigger:
+  branches:
+    include:
+      - master
+      - develop
+  paths:
+    include:
+      - src/*
+      - deployment/pipelines/build/Microservice.Core.NuGet.Build.yaml
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: './Lueben.Microservice.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  cache_key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
+  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+
+steps:
+
+- task: Cache@2
+  displayName: "Cache: restore packages"
+  inputs:
+    key: $(cache_key)
+    path: "$(NUGET_PACKAGES)"
+    cacheHitVar: "CACHE_RESTORED"
+    restoreKeys: |
+      nuget | "$(Agent.OS)"
+      nuget
+
+- task: DotNetCoreCLI@2
+  displayName: Restore NuGet packages
+  # condition: ne(variables.CACHE_RESTORED, true)
+  inputs:
+    command: 'restore'
+    projects: '$(solution)'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
+    verbosityRestore: Normal
+
+- task: DotNetCoreCLI@2
+  displayName: Build solution
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+    arguments: '--configuration $(buildConfiguration)'
+
+# Unit Tests
+- task: CmdLine@2
+  displayName: Unit Tests
+  inputs:
+    script: dotnet test $(solution) --no-build --configuration $(buildConfiguration) --logger trx --results-directory $(Agent.TempDirectory) --collect "XPlat Code coverage" --settings "./CodeCoverage.runsettings"
+
+# Publish unit tests results
+- task: PublishTestResults@2
+  displayName: Publish unit tests results
+  inputs:
+    testResultsFormat: "VSTest"
+    testResultsFiles: "**/*.trx"
+    searchFolder: "$(Agent.TempDirectory)"
+    testRunTitle: "Lueben.Microservice.Core.Unit.Tests"
+
+# # Code coverage
+# - task: CmdLine@2
+#   displayName: "CodeCoverage: Install ReportGenerator tool"
+#   inputs:
+#     script: dotnet tool install --global dotnet-reportgenerator-globaltool --version 4.7.1
+
+# - task: CmdLine@2
+#   displayName: "CodeCoverage: Create reports"
+#   inputs:
+#     script: reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:./coverlet/reports -reporttypes:"Cobertura"
+
+# - task: PublishCodeCoverageResults@1
+#   displayName: "CodeCoverage: Publish code coverage report"
+#   inputs:
+#     codeCoverageTool: Cobertura
+#     summaryFileLocation: ./coverlet/reports/Cobertura.xml
+
+# - task: BuildQualityChecks@8
+#   inputs:
+#     checkCoverage: true
+#     coverageFailOption: 'fixed'
+#     coverageType: 'branches'
+#     coverageThreshold: '80'
+#     buildConfiguration: '$(buildConfgiguration)'
+
+# Create nuget packages
+- task: DotNetCoreCLI@2
+  displayName: DotNet pack
+  inputs:
+    command: 'pack'
+    packagesToPack: '$(solution)'
+    nobuild: true
+    versioningScheme: 'off'
+    verbosityPack: 'Normal'
+
+# Publish pdb files
+- task: PublishSymbols@2
+  inputs:
+    SearchPattern: '**/src/**/*.pdb'
+    SymbolServerType: 'TeamServices'
+    IndexSources: false
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish artifact
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'nuget_package'
+    publishLocation: 'Container'

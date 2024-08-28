@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	    <PackageId>Lueben.Microservice.RestSharpClient</PackageId>
+	    <Version>4.1.1</Version>
+	    <Title>Lueben.Microservice.RestSharpClient</Title>
+	    <Description>Lueben.Microservice.RestSharpClient</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Lueben.Microservice.RestSharpClient.Abstractions" Version="2.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.3" />
+        <PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="108.0.4" />
+        <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="6.0.0" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>

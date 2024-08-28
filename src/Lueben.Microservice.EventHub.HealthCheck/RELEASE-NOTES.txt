@@ -1,0 +1,17 @@
+﻿﻿1.0.1
+- Introduce custom implementation of EventHubHealthCheck
+- Add Managed identity support for EventHubHealthCheck
+v2.0.0
+- Updated target framework and dependencies.
+v2.0.1
+- Updated dependendencies version
+v2.0.2
+- Updated dependendencies version
+v2.0.3
+- Add .net6 target framework
+v3.0.0
+- Updated dependendencies version
+v3.0.1
+- Updated dependendencies version
+v3.0.2
+- Updated dependendencies version

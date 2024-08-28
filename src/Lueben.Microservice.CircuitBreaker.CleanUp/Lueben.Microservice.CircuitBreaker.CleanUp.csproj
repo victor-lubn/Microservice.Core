@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.CircuitBreaker.CleanUp</PackageId>
+    <Version>1.0.3</Version>
+    <Title>Lueben.Microservice.CircuitBreaker.CleanUp</Title>
+    <Description>Lueben.Microservice.CircuitBreaker.CleanUp</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.Diagnostics" Version="2.0.2" />
+    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CircuitBreakerCleanUpFunction.cs" Pack="true" PackagePath="contentFiles\cs\any\CircuitBreakerCleanUpFunction">
+      <BuildAction>Compile</BuildAction>
+    </Content>
+  </ItemGroup>
+
+</Project>

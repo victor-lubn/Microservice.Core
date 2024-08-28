@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.CircuitBreaker.HealthCheck</PackageId>
+    <Version>1.0.0</Version>
+    <Title>Lueben.Microservice.CircuitBreaker.HealthCheck</Title>
+    <Description>Lueben.Microservice.CircuitBreaker.HealthCheck</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>DF0305</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="C:\Users\Andrei_Hushchyn\.nuget\packages\Lueben.microservice.circuitbreaker\2.0.5\contentFiles\cs\any\CircuitBreaker\CircuitBreakerFunctions.cs" />
+    <Compile Remove="C:\Users\Andrei_Hushchyn\.nuget\packages\Lueben.microservice.circuitbreaker\2.0.5\contentFiles\cs\any\CircuitBreaker\DurableCircuitBreakerExternalApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.CircuitBreaker" Version="2.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="6.0.14" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Diagnostics\Lueben.Microservice.Diagnostics.csproj" />
+  </ItemGroup>
+</Project>

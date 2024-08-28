@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+	<TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.Api.Middleware</PackageId>
+	<Version>1.0.3</Version>
+	<Title>Lueben.Microservice.Api.Middleware</Title>
+	<Description>Lueben.Microservice.Api.Middleware</Description>
+  </PropertyGroup>
+
+ <ItemGroup>
+   <PackageReference Include="Lueben.Microservice.Api.Models" Version="3.0.0" />
+   <PackageReference Include="Lueben.Microservice.Serialization" Version="3.0.0" />
+   <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="1.3.2" />
+ </ItemGroup>
+
+</Project>

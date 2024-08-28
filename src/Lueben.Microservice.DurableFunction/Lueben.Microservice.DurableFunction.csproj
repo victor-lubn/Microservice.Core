@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>Lueben.Microservice.DurableFunction</PackageId>
+    <Version>3.1.1</Version>
+    <Title>Lueben.Microservice.DurableFunction</Title>
+    <Description>Lueben.Microservice.DurableFunction</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lueben.Microservice.ApplicationInsights" Version="3.0.5" />
+    <PackageReference Include="Lueben.Microservice.Extensions.DurableTask" Version="1.0.1" />
+    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.12.0" />
+  </ItemGroup>
+</Project>

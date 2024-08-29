@@ -1289,7 +1289,7 @@
           "xunit.extensibility.core": "[2.9.0]"
         }
       },
-      "Lueben.applicationinsights": {
+      "lueben.applicationinsights": {
         "type": "Project",
         "dependencies": {
           "Microsoft.ApplicationInsights": "[2.21.0, )",

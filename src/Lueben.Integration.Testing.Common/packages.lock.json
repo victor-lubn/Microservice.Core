@@ -12,15 +12,6 @@
           "Moq": "[4.7.0, 5.0.0)"
         }
       },
-      "Lueben.Integration.Testing.WireMock": {
-        "type": "Direct",
-        "requested": "[2.0.0, )",
-        "resolved": "2.0.0",
-        "contentHash": "DYcNIuFKVU0r0zrcdFM2UD3llELIuSrE+m8iXZBemB17E4it0vajUAsBQ4xcql0XktZIY4hBmJJ/2IoAnwOeuw==",
-        "dependencies": {
-          "WireMock.Net": "1.5.16"
-        }
-      },
       "Microsoft.SourceLink.GitHub": {
         "type": "Direct",
         "requested": "[1.1.1, )",
@@ -1858,6 +1849,12 @@
         "type": "Transitive",
         "resolved": "2.0.3",
         "contentHash": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg=="
+      },
+      "lueben.integration.testing.wiremock": {
+        "type": "Project",
+        "dependencies": {
+          "WireMock.Net": "[1.5.16, )"
+        }
       }
     },
     "net6.0": {
@@ -1871,15 +1868,6 @@
           "Moq": "[4.7.0, 5.0.0)"
         }
       },
-      "Lueben.Integration.Testing.WireMock": {
-        "type": "Direct",
-        "requested": "[2.0.0, )",
-        "resolved": "2.0.0",
-        "contentHash": "DYcNIuFKVU0r0zrcdFM2UD3llELIuSrE+m8iXZBemB17E4it0vajUAsBQ4xcql0XktZIY4hBmJJ/2IoAnwOeuw==",
-        "dependencies": {
-          "WireMock.Net": "1.5.16"
-        }
-      },
       "Microsoft.SourceLink.GitHub": {
         "type": "Direct",
         "requested": "[1.1.1, )",
@@ -3690,6 +3678,12 @@
         "type": "Transitive",
         "resolved": "2.0.3",
         "contentHash": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg=="
+      },
+      "lueben.integration.testing.wiremock": {
+        "type": "Project",
+        "dependencies": {
+          "WireMock.Net": "[1.5.16, )"
+        }
       }
     },
     "net7.0": {
@@ -3703,15 +3697,6 @@
           "Moq": "[4.7.0, 5.0.0)"
         }
       },
-      "Lueben.Integration.Testing.WireMock": {
-        "type": "Direct",
-        "requested": "[2.0.0, )",
-        "resolved": "2.0.0",
-        "contentHash": "DYcNIuFKVU0r0zrcdFM2UD3llELIuSrE+m8iXZBemB17E4it0vajUAsBQ4xcql0XktZIY4hBmJJ/2IoAnwOeuw==",
-        "dependencies": {
-          "WireMock.Net": "1.5.16"
-        }
-      },
       "Microsoft.SourceLink.GitHub": {
         "type": "Direct",
         "requested": "[1.1.1, )",
@@ -5522,6 +5507,12 @@
         "type": "Transitive",
         "resolved": "2.0.3",
         "contentHash": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg=="
+      },
+      "lueben.integration.testing.wiremock": {
+        "type": "Project",
+        "dependencies": {
+          "WireMock.Net": "[1.5.16, )"
+        }
       }
     }
   }

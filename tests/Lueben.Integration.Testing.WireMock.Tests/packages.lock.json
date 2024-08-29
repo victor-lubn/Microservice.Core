@@ -1870,7 +1870,7 @@
           "xunit.extensibility.core": "[2.4.0]"
         }
       },
-      "Lueben.integration.testing.wiremock": {
+      "lueben.integration.testing.wiremock": {
         "type": "Project",
         "dependencies": {
           "WireMock.Net": "[1.5.16, )"

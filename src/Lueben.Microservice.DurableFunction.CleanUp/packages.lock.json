@@ -2,15 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions": {
         "type": "Direct",
         "requested": "[4.0.1, )",
@@ -2013,18 +2004,15 @@
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.2"
         }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions": {
         "type": "Direct",
         "requested": "[4.0.1, )",
@@ -3379,19 +3367,16 @@
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.2"
+        }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
         }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions": {
         "type": "Direct",
         "requested": "[4.0.1, )",
@@ -4746,6 +4731,12 @@
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.2"
+        }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
         }
       }
     }

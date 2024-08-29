@@ -8,6 +8,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" Version="1.5.1" />
-    <PackageReference Include="Lueben.Microservice.Api.Models" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Api.Models\Lueben.Microservice.Api.Models.csproj" />
   </ItemGroup>
 </Project>

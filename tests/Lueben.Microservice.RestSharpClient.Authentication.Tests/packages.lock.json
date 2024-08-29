@@ -79,15 +79,6 @@
           "NETStandard.Library": "1.6.1"
         }
       },
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Transitive",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.CodeCoverage": {
         "type": "Transitive",
         "resolved": "17.1.0",
@@ -1209,7 +1200,7 @@
           "xunit.extensibility.core": "[2.4.1]"
         }
       },
-      "Lueben.microservice.restsharpclient": {
+      "lueben.microservice.restsharpclient": {
         "type": "Project",
         "dependencies": {
           "Lueben.Microservice.RestSharpClient.Abstractions": "[2.0.5, )",
@@ -1220,7 +1211,14 @@
           "System.Text.Encodings.Web": "[6.0.0, )"
         }
       },
-      "Lueben.microservice.restsharpclient.authentication": {
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
+        }
+      },
+      "lueben.microservice.restsharpclient.authentication": {
         "type": "Project",
         "dependencies": {
           "Lueben.Microservice.RestSharpClient.Abstractions": "[2.0.5, )",

@@ -7,9 +7,11 @@
     <Description>Lueben.Microservice.DurableFunction</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.ApplicationInsights" Version="3.0.5" />
-    <PackageReference Include="Lueben.Microservice.Extensions.DurableTask" Version="1.0.1" />
-    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.12.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.DurableTask\Lueben.Microservice.Extensions.DurableTask.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.RestSharpClient\Lueben.Microservice.RestSharpClient.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.ApplicationInsights\Lueben.Microservice.ApplicationInsights.csproj" />
   </ItemGroup>
 </Project>

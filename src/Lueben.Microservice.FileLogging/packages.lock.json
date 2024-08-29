@@ -2,16 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "uZpB4CIQg0KbmVamuHY31tey8RPcy6ZGmbIpfffoXthWJwatwdfOiWfAs1fKZsBxt3jK+zKaSLZTsyfE3GYInQ==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
-        }
-      },
       "Microsoft.Extensions.Logging": {
         "type": "Direct",
         "requested": "[8.0.0, )",
@@ -191,19 +181,16 @@
         "type": "Transitive",
         "resolved": "8.0.0",
         "contentHash": "CMaFr7v+57RW7uZfZkPExsPB6ljwzhjACWW1gfU35Y56rk72B/Wu+sTqxVmGSk4SFUlPc3cjeKND0zktziyjBA=="
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "uZpB4CIQg0KbmVamuHY31tey8RPcy6ZGmbIpfffoXthWJwatwdfOiWfAs1fKZsBxt3jK+zKaSLZTsyfE3GYInQ==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
-        }
-      },
       "Microsoft.Extensions.Logging": {
         "type": "Direct",
         "requested": "[8.0.0, )",
@@ -335,19 +322,16 @@
         "type": "Transitive",
         "resolved": "6.0.0",
         "contentHash": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg=="
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
+        }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "uZpB4CIQg0KbmVamuHY31tey8RPcy6ZGmbIpfffoXthWJwatwdfOiWfAs1fKZsBxt3jK+zKaSLZTsyfE3GYInQ==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
-        }
-      },
       "Microsoft.Extensions.Logging": {
         "type": "Direct",
         "requested": "[8.0.0, )",
@@ -471,19 +455,16 @@
         "type": "Transitive",
         "resolved": "4.0.0",
         "contentHash": "2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw=="
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
+        }
       }
     },
     "net8.0": {
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "uZpB4CIQg0KbmVamuHY31tey8RPcy6ZGmbIpfffoXthWJwatwdfOiWfAs1fKZsBxt3jK+zKaSLZTsyfE3GYInQ==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
-        }
-      },
       "Microsoft.Extensions.Logging": {
         "type": "Direct",
         "requested": "[8.0.0, )",
@@ -607,6 +588,13 @@
         "type": "Transitive",
         "resolved": "4.0.0",
         "contentHash": "2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw=="
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
+        }
       }
     }
   }

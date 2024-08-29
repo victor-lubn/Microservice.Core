@@ -435,7 +435,7 @@
           "xunit.extensibility.core": "[2.9.0]"
         }
       },
-      "Lueben.microservice.options": {
+      "lueben.microservice.options": {
         "type": "Project",
         "dependencies": {
           "Azure.Identity": "[1.12.0, )",

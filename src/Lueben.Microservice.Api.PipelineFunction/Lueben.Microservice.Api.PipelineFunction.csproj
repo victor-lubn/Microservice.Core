@@ -9,8 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.Api.Models" Version="2.1.0" />
-    <PackageReference Include="Lueben.Microservice.Serialization" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.37" />
@@ -18,4 +16,9 @@
     <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Api.Models\Lueben.Microservice.Api.Models.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.Serialization\Lueben.Microservice.Serialization.csproj" />
+  </ItemGroup>
+  
 </Project>

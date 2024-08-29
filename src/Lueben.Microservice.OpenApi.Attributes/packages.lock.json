@@ -2,15 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -1526,18 +1517,15 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -3014,19 +3002,16 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -4503,19 +4488,16 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     },
     "net8.0": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -5992,6 +5974,12 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     }

@@ -9,10 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.Diagnostics" Version="2.0.2" />
-    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="4.0.1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.Diagnostics\Lueben.Microservice.Diagnostics.csproj" />
   </ItemGroup>
 
   <ItemGroup>

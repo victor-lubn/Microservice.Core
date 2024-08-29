@@ -7,9 +7,13 @@
       <Decription>Lueben.Microservice.FileLogging</Decription>
   </PropertyGroup>
 	<ItemGroup>
-    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
+  </ItemGroup>
+
 </Project>

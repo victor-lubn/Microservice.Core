@@ -2,15 +2,6 @@
   "version": 1,
   "dependencies": {
     "net6.0": {
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.Http": {
         "type": "Direct",
         "requested": "[3.2.0, )",
@@ -562,18 +553,15 @@
         "type": "Transitive",
         "resolved": "4.5.4",
         "contentHash": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg=="
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.Http": {
         "type": "Direct",
         "requested": "[3.2.0, )",
@@ -1116,18 +1104,15 @@
         "type": "Transitive",
         "resolved": "4.5.4",
         "contentHash": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg=="
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net8.0": {
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.Http": {
         "type": "Direct",
         "requested": "[3.2.0, )",
@@ -1669,6 +1654,12 @@
         "type": "Transitive",
         "resolved": "4.5.4",
         "contentHash": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg=="
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     }
   }

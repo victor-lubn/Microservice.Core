@@ -157,14 +157,6 @@
           "XPath2.Extensions": "1.1.3"
         }
       },
-      "Lueben.Integration.Testing.WireMock": {
-        "type": "Transitive",
-        "resolved": "2.0.0",
-        "contentHash": "DYcNIuFKVU0r0zrcdFM2UD3llELIuSrE+m8iXZBemB17E4it0vajUAsBQ4xcql0XktZIY4hBmJJ/2IoAnwOeuw==",
-        "dependencies": {
-          "WireMock.Net": "1.5.16"
-        }
-      },
       "Humanizer": {
         "type": "Transitive",
         "resolved": "2.14.1",
@@ -1904,7 +1896,7 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.integration.testing.common": {
+      "lueben.integration.testing.common": {
         "type": "Project",
         "dependencies": {
           "AutoFixture.AutoMoq": "[4.17.0, )",
@@ -1912,6 +1904,12 @@
           "Moq": "[4.18.4, )",
           "WireMock.Net.xUnit": "[1.5.13, )",
           "xunit.extensibility.core": "[2.4.2, )"
+        }
+      },
+      "lueben.integration.testing.wiremock": {
+        "type": "Project",
+        "dependencies": {
+          "WireMock.Net": "[1.5.16, )"
         }
       }
     }

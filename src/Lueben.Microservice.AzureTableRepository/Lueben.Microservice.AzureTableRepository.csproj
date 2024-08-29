@@ -10,10 +10,13 @@
 
     <ItemGroup>
         <PackageReference Include="Azure.Data.Tables" Version="12.8.0" />
-        <PackageReference Include="Lueben.Microservice.Diagnostics" Version="2.0.2" />
-        <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
         <PackageReference Include="Microsoft.Extensions.Azure" Version="1.6.0" />
         <PackageReference Include="System.Net.Http" Version="4.3.4" />
     </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.Diagnostics\Lueben.Microservice.Diagnostics.csproj" />
+  </ItemGroup>
 
 </Project>

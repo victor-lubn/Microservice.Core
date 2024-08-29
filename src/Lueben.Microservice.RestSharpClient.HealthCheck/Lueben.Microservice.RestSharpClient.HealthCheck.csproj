@@ -9,8 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.RestSharpClient\Lueben.Microservice.RestSharpClient.csproj" />
   </ItemGroup>
 
 </Project>

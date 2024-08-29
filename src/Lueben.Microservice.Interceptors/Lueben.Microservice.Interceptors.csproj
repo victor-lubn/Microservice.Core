@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageId>Lueben.Microservice.Interceptors</PackageId>
     <Version>2.0.3</Version>
     <Title>Lueben.Microservice.Interceptors</Title>
@@ -14,9 +14,13 @@
 
   <ItemGroup>
     <PackageReference Include="Castle.Core.AsyncInterceptor" Version="2.1.0" />
-    <PackageReference Include="Lueben.Microservice.ApplicationInsights" Version="3.0.4" />
-    <PackageReference Include="Lueben.Microservice.CircuitBreaker" Version="2.0.4" />
-    <PackageReference Include="Lueben.Microservice.RetryPolicy" Version="2.0.2" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.ApplicationInsights\Lueben.Microservice.ApplicationInsights.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.CircuitBreaker\Lueben.Microservice.CircuitBreaker.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.RetryPolicy\Lueben.Microservice.RetryPolicy.csproj" />
+  </ItemGroup>
+  
 </Project>

@@ -9,12 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Lueben.Microservice.RestSharpClient.Abstractions" Version="2.0.5" />
         <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.3" />
         <PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="108.0.4" />
         <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="6.0.0" />
         <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
     </ItemGroup>
-
+    <ItemGroup>
+      <ProjectReference Include="..\Lueben.Microservice.RestSharpClient.Abstractions\Lueben.Microservice.RestSharpClient.Abstractions.csproj" />
+    </ItemGroup>
 </Project>

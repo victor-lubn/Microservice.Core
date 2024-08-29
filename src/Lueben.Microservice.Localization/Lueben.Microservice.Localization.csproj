@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.Api.Middleware" Version="1.0.3" />
-    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
+    <ProjectReference Include="..\Lueben.Microservice.Api.Middleware\Lueben.Microservice.Api.Middleware.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
   </ItemGroup>
 
 </Project>

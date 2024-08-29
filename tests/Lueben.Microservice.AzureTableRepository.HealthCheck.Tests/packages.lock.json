@@ -89,35 +89,6 @@
           "System.Diagnostics.EventLog": "6.0.0"
         }
       },
-      "Lueben.Microservice.AzureTableRepository": {
-        "type": "Transitive",
-        "resolved": "2.0.3",
-        "contentHash": "yiNB5urwfTTsRhJ0tEGJqcsIWG/Ob3IO0A69xWfOYpjDagSHXa+nZgwQdBdoZsB0rtXy+Z8TFtjk3rfMFnzDcg==",
-        "dependencies": {
-          "Azure.Data.Tables": "12.8.0",
-          "Lueben.Microservice.Diagnostics": "2.0.2",
-          "Lueben.Microservice.Extensions.Configuration": "2.0.2",
-          "Microsoft.Extensions.Azure": "1.6.0",
-          "System.Net.Http": "4.3.4"
-        }
-      },
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Transitive",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Transitive",
-        "resolved": "2.0.2",
-        "contentHash": "Ko3ows/WnTeidZFhY+Q1yg9FkLgXoFDSPhyl2t9l8L0sVRG422WAfzidpFb1vJsg8/3nZUhaYaVNCeUUTR8lZg==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "6.0.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0"
-        }
-      },
       "JetBrains.Annotations": {
         "type": "Transitive",
         "resolved": "2022.3.1",
@@ -172,33 +143,32 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
+        "resolved": "8.0.0",
+        "contentHash": "3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ==",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "6.0.0"
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Configuration.Binder": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "b3ErKzND8LIC7o08QAVlKfaEIYEvLJbtmVbFZVBRXeu9YkKfSSzLZfR1SUfQPBIy9mKLhEtJgGYImkcMNaKE0A==",
+        "resolved": "8.0.0",
+        "contentHash": "mBMoXLsr5s1y2zOHWmKsE9veDcx8h1x/c3rz4baEdQKTeDcmQAPNbB54Pi/lhFO3K431eEq6PFbMgLaa6PHFfA==",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         }
       },
       "Microsoft.Extensions.DependencyInjection": {
         "type": "Transitive",
-        "resolved": "6.0.1",
-        "contentHash": "vWXPg3HJQIpZkENn1KWq8SfbqVujVD7S7vIAyFXXqK5xkf1Vho+vG0bLBCHxU36lD1cLLtmGpfYf0B3MYFi9tQ==",
+        "resolved": "8.0.0",
+        "contentHash": "V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg=="
+        "resolved": "8.0.0",
+        "contentHash": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg=="
       },
       "Microsoft.Extensions.Diagnostics.HealthChecks": {
         "type": "Transitive",
@@ -241,29 +211,29 @@
       },
       "Microsoft.Extensions.Options": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "dzXN0+V1AyjOe2xcJ86Qbo233KHuLEY0njf/P2Kw8SfJU+d45HNS2ctJdnEnrWbM9Ye2eFgaC5Mj9otRMU6IsQ==",
+        "resolved": "8.0.0",
+        "contentHash": "JOVOfqpnqlVLUzINQ2fox8evY2SKLYJ3BV8QDe/Jyp21u1T7r45x/R/5QdteURMR5r01GxeJSBBUOCOyaNXA3g==",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Options.ConfigurationExtensions": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "bXWINbTn0vC0FYc9GaQTISbxhQLAMrvtbuvD9N6JelEaIS/Pr62wUCinrq5bf1WRBGczt1v4wDhxFtVFNcMdUQ==",
+        "resolved": "8.0.0",
+        "contentHash": "0f4DMRqEd50zQh+UyJc+/HiBsZ3vhAQALgdkcQEalSH1L2isdC7Yj54M3cyo5e+BeO5fcBQ7Dxly8XiBBcvRgw==",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Options": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0"
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Primitives": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
+        "resolved": "8.0.0",
+        "contentHash": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
@@ -1345,11 +1315,34 @@
           "xunit.extensibility.core": "[2.4.1]"
         }
       },
-      "Lueben.microservice.azuretablerepository.healthcheck": {
+      "lueben.microservice.azuretablerepository": {
+        "type": "Project",
+        "dependencies": {
+          "Azure.Data.Tables": "[12.8.0, )",
+          "Lueben.Microservice.Diagnostics": "[3.0.0, )",
+          "Lueben.Microservice.Extensions.Configuration": "[3.0.0, )",
+          "Microsoft.Extensions.Azure": "[1.6.0, )",
+          "System.Net.Http": "[4.3.4, )"
+        }
+      },
+      "lueben.microservice.azuretablerepository.healthcheck": {
         "type": "Project",
         "dependencies": {
           "Lueben.Microservice.AzureTableRepository": "[2.0.3, )",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "[6.0.14, )"
+        }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
         }
       }
     }

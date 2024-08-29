@@ -46,16 +46,25 @@
       },
       "Azure.Core": {
         "type": "Transitive",
-        "resolved": "1.20.0",
-        "contentHash": "q7xigZIBjLjSKJA/Y+VygmJ2iZGiEyNuicN5iRX9oJL7451SulZm/CQ7qd8YCeL5TgNCNYCIrTIqRaams95zHA==",
+        "resolved": "1.27.0",
+        "contentHash": "2313x90KaNKRY88ZMK/4MQaNESTzgPEeUCeyXMrOoZwh8HsjuHAHPG8eskHlpmQ4CuOag+QEwE04vykzTvosrw==",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Diagnostics.DiagnosticSource": "4.6.0",
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0",
+          "System.Text.Json": "4.7.2",
           "System.Threading.Tasks.Extensions": "4.5.4"
+        }
+      },
+      "Azure.Data.Tables": {
+        "type": "Transitive",
+        "resolved": "12.8.0",
+        "contentHash": "jBNOUXoANEv66mIyR+rzC7toogo48pYciH4n5xsb8nHRz6lfjX9jwsOjC8sdR1Zl75Z6MZvaZjajqVwCt3JqVw==",
+        "dependencies": {
+          "Azure.Core": "1.27.0",
+          "System.Text.Json": "4.7.2"
         }
       },
       "Azure.Identity": {
@@ -102,21 +111,6 @@
           "System.Memory": "4.5.3"
         }
       },
-      "Lueben.Microservice.CircuitBreaker": {
-        "type": "Transitive",
-        "resolved": "2.0.5",
-        "contentHash": "HVVCWjtsxzf/wP4lqOY764tRxW0449ED4n+/KudApCvyRDpaTEXdpWx19s2BhlKPBXXfQp0qFxiJS6hHsU6QUA==",
-        "dependencies": {
-          "Microsoft.Azure.Functions.Extensions": "1.1.0",
-          "Microsoft.Azure.WebJobs.Extensions.DurableTask": "2.9.2",
-          "Microsoft.Azure.WebJobs.Extensions.Http": "3.2.0",
-          "Newtonsoft.Json": "13.0.2",
-          "Polly": "7.2.3",
-          "Polly.Caching.Memory": "3.0.2",
-          "System.Net.Http": "4.3.4",
-          "System.Text.RegularExpressions": "4.3.1"
-        }
-      },
       "JetBrains.Annotations": {
         "type": "Transitive",
         "resolved": "2022.3.1",
@@ -124,11 +118,10 @@
       },
       "Microsoft.ApplicationInsights": {
         "type": "Transitive",
-        "resolved": "2.12.2",
-        "contentHash": "c0Sb1nVTzKS7q9tc5toTORP903rDdO7mN6WM/fkHq68Ds95/5DffJ9KZmtEZTRGywDo43TH+ClQN4jnc/q7lEQ==",
+        "resolved": "2.21.0",
+        "contentHash": "btZEDWAFNo9CoYliMCriSMTX3ruRGZTtYw4mo2XyyfLlowFicYVM2Xszi5evDG95QRYV7MbbH3D2RqVwfZlJHw==",
         "dependencies": {
-          "System.Diagnostics.DiagnosticSource": "4.6.0",
-          "System.RunTime.InteropServices": "4.3.0"
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
         }
       },
       "Microsoft.AspNet.WebApi.Client": {
@@ -421,25 +414,35 @@
           "System.Text.Encodings.Web": "4.5.0"
         }
       },
+      "Microsoft.Azure.DurableTask.ApplicationInsights": {
+        "type": "Transitive",
+        "resolved": "0.1.2",
+        "contentHash": "eiGf4O/L2Gv+j9uu5wK/7mx50oS6bEEO8grqrp8a323Soc4/dBzm7gYrXHaU2nmtFtTO2ZXTPXd9BbaLPd19IQ==",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.21.0",
+          "Microsoft.Azure.DurableTask.Core": "2.15.1",
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0"
+        }
+      },
       "Microsoft.Azure.DurableTask.AzureStorage": {
         "type": "Transitive",
-        "resolved": "1.13.4",
-        "contentHash": "jiHQsgI9Np+toeHjOZo3ijQgPwXWVDKGtsERt90cTb1s536BsGXZz0o9WWtdjMlpHsU03+gIvo/pJhxMSrWPLw==",
+        "resolved": "1.16.0",
+        "contentHash": "UE0Rx/tZ0oy8d/42H8/x1kRL9PJ8wyGLiW/kq5NP7HAD8DSh6bJqrNA6fU0ppGISceRZbADZOG0aV8sMQBMnfg==",
         "dependencies": {
-          "Microsoft.Azure.DurableTask.Core": "2.12.1",
+          "Azure.Data.Tables": "12.8.0",
+          "Microsoft.Azure.DurableTask.Core": "2.15.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
-          "Newtonsoft.Json": "11.0.2",
           "WindowsAzure.Storage": "9.3.1"
         }
       },
       "Microsoft.Azure.DurableTask.Core": {
         "type": "Transitive",
-        "resolved": "2.12.1",
-        "contentHash": "OjiVqtjjS/wKsl8+kGWZ8cPq3HARhpg5A5lFyVr5X4f+vWgUl41bxA+e6q1gTg9Lz0bn/2x7riK9RLs1oJmtOg==",
+        "resolved": "2.15.1",
+        "contentHash": "Dny0o4Thdx8efgF5qixcQ5/H8S+mPASLDuAzATsetnNQSX4VXSZ5shoTpKRA6qqm7ljgsxB3gyqJHOrCKp8mUQ==",
         "dependencies": {
           "Castle.Core": "5.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "13.0.1",
           "System.Diagnostics.DiagnosticSource": "5.0.1",
           "System.Reactive.Compatibility": "4.4.1",
           "System.Reactive.Core": "4.4.1"
@@ -456,10 +459,10 @@
       },
       "Microsoft.Azure.WebJobs": {
         "type": "Transitive",
-        "resolved": "3.0.32",
-        "contentHash": "uN8GsFqPFHHcSrwwj/+0tGe6F6cOwugqUiePPw7W3TL9YC594+Hw8GBK5S/fcDWXacqvRRGf9nDX8xP94/Yiyw==",
+        "resolved": "3.0.37",
+        "contentHash": "cB8ExO360UeFprY4GAuumLhg35krY56LriAAE8kNkckxFQlEIZwQ5lMsOFU0cRwUcvFajLMdALllKF2PgYJRkA==",
         "dependencies": {
-          "Microsoft.Azure.WebJobs.Core": "3.0.32",
+          "Microsoft.Azure.WebJobs.Core": "3.0.37",
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.1.0",
@@ -468,34 +471,35 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Configuration": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
-          "System.Memory.Data": "1.0.1",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Memory.Data": "1.0.2",
           "System.Threading.Tasks.Dataflow": "4.8.0"
         }
       },
       "Microsoft.Azure.WebJobs.Core": {
         "type": "Transitive",
-        "resolved": "3.0.32",
-        "contentHash": "pW5lyF0Tno1cC2VkmBLyv7E3o5ObDdbn3pfpUpKdksJo9ysCdQTpgc0Ib99wPHca6BgvoglicGbDYXuatanMfg==",
+        "resolved": "3.0.37",
+        "contentHash": "nKlnoQyKmC5HsUIWLXu3a9VYhLKAAriZQ8v3PLldWKjV1vIQMiHKGK68FbLjRtvZsxCnIYS44gLlQjuOua//dg==",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.0",
-          "System.Diagnostics.TraceSource": "4.3.0"
+          "System.Diagnostics.TraceSource": "4.3.0",
+          "System.Memory.Data": "1.0.1"
         }
       },
       "Microsoft.Azure.WebJobs.Extensions.DurableTask": {
         "type": "Transitive",
-        "resolved": "2.9.2",
-        "contentHash": "TGDFMlqY7jdpalIvgcyOdso89B+DOkdySixak73eJ+pCBeXDmDwzwVOH358QIcn0iwb7J3miIoUjeHeNv8PKTA==",
+        "resolved": "2.12.0",
+        "contentHash": "+b9a2v0DyzkSn4N1xEG7wqEHYMSROXWjmqYPNA+oyZRf0HwdV+EfqwIuLtn5v3VCyRZ9nRhndVagd+MLrQcJ6g==",
         "dependencies": {
           "Azure.Identity": "1.5.0",
-          "Microsoft.ApplicationInsights": "2.12.2",
           "Microsoft.AspNetCore.Mvc.WebApiCompatShim": "2.2.0",
           "Microsoft.AspNetCore.Routing": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets": "2.2.1",
-          "Microsoft.Azure.DurableTask.AzureStorage": "1.13.4",
-          "Microsoft.Azure.DurableTask.Core": "2.12.1",
-          "Microsoft.Azure.WebJobs": "3.0.31",
+          "Microsoft.Azure.DurableTask.ApplicationInsights": "0.1.2",
+          "Microsoft.Azure.DurableTask.AzureStorage": "1.16.0",
+          "Microsoft.Azure.DurableTask.Core": "2.15.1",
+          "Microsoft.Azure.WebJobs": "3.0.37",
           "Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers": "0.5.0",
           "Microsoft.DurableTask.Sidecar.Protobuf": "1.0.0",
           "Microsoft.Extensions.Azure": "1.1.1",
@@ -522,8 +526,8 @@
       },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Transitive",
-        "resolved": "1.0.0",
-        "contentHash": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw=="
+        "resolved": "5.0.0",
+        "contentHash": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ=="
       },
       "Microsoft.CodeCoverage": {
         "type": "Transitive",
@@ -1809,8 +1813,8 @@
       },
       "System.Text.Json": {
         "type": "Transitive",
-        "resolved": "4.6.0",
-        "contentHash": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA=="
+        "resolved": "4.7.2",
+        "contentHash": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg=="
       },
       "System.Text.RegularExpressions": {
         "type": "Transitive",
@@ -1954,16 +1958,29 @@
           "xunit.extensibility.core": "[2.5.1]"
         }
       },
-      "Lueben.microservice.circuitbreaker.healthcheck": {
+      "lueben.microservice.circuitbreaker": {
         "type": "Project",
         "dependencies": {
-          "Lueben.Microservice.CircuitBreaker": "[2.0.5, )",
-          "Lueben.Microservice.Diagnostics": "[2.0.2, )",
+          "Microsoft.Azure.Functions.Extensions": "[1.1.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.DurableTask": "[2.12.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.Http": "[3.2.0, )",
+          "Newtonsoft.Json": "[13.0.2, )",
+          "Polly": "[7.2.3, )",
+          "Polly.Caching.Memory": "[3.0.2, )",
+          "System.Net.Http": "[4.3.4, )",
+          "System.Text.RegularExpressions": "[4.3.1, )"
+        }
+      },
+      "lueben.microservice.circuitbreaker.healthcheck": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.CircuitBreaker": "[2.0.7, )",
+          "Lueben.Microservice.Diagnostics": "[3.0.0, )",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "[6.0.14, )",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "[6.0.14, )"
         }
       },
-      "Lueben.microservice.diagnostics": {
+      "lueben.microservice.diagnostics": {
         "type": "Project",
         "dependencies": {
           "JetBrains.Annotations": "[2022.3.1, )"

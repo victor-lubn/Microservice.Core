@@ -2,25 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Options": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -145,28 +126,22 @@
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Options": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -237,29 +212,23 @@
         "contentHash": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
         }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Direct",
-        "requested": "[2.0.2, )",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Options": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -330,6 +299,19 @@
         "contentHash": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "lueben.microservice.diagnostics": {
+        "type": "Project",
+        "dependencies": {
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
         }
       }
     }

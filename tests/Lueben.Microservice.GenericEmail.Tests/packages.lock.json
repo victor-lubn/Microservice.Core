@@ -52,23 +52,6 @@
           "System.Diagnostics.EventLog": "6.0.0"
         }
       },
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Transitive",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Transitive",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "JetBrains.Annotations": {
         "type": "Transitive",
         "resolved": "2022.3.1",
@@ -1100,12 +1083,25 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.genericemail": {
+      "lueben.microservice.diagnostics": {
         "type": "Project",
         "dependencies": {
-          "Lueben.Microservice.Diagnostics": "[2.0.2, )",
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.genericemail": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Diagnostics": "[3.0.0, )",
           "Lueben.Microservice.RestSharpClient.Abstractions": "[2.0.5, )",
           "Microsoft.Extensions.Options": "[6.0.0, )"
+        }
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
         }
       }
     }

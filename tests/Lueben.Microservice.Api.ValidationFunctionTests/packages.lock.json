@@ -107,32 +107,6 @@
           "Grpc.Core.Api": "2.60.0"
         }
       },
-      "Lueben.Microservice.Api.Middleware": {
-        "type": "Transitive",
-        "resolved": "1.0.3",
-        "contentHash": "cTdIncoqzo/ekdjI77E4tLZy4pX4nhDdzoKUNozI4+zhhQDt0z23JxTYBDSMIrG7Ha8LYT2tfdv/ssOmmac8LQ==",
-        "dependencies": {
-          "Lueben.Microservice.Api.Models": "3.0.0",
-          "Lueben.Microservice.Serialization": "3.0.0",
-          "Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore": "1.3.2"
-        }
-      },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.Functions.Worker": {
         "type": "Transitive",
         "resolved": "1.22.0",
@@ -1487,7 +1461,21 @@
           "xunit.extensibility.core": "[2.4.1]"
         }
       },
-      "Lueben.microservice.api.validationfunction": {
+      "lueben.microservice.api.middleware": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Lueben.Microservice.Serialization": "[3.0.0, )",
+          "Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore": "[1.3.2, )"
+        }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.api.validationfunction": {
         "type": "Project",
         "dependencies": {
           "FluentValidation": "[11.9.2, )",
@@ -1495,6 +1483,12 @@
           "Lueben.Microservice.Api.Models": "[3.0.0, )",
           "Lueben.Microservice.Serialization": "[3.0.0, )",
           "Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore": "[1.3.2, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     }

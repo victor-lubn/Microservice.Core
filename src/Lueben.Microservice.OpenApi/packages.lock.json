@@ -2,16 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.OpenApi.Attributes": {
-        "type": "Direct",
-        "requested": "[4.0.0, )",
-        "resolved": "4.0.0",
-        "contentHash": "CCKCQeXIWvIA3vOmBdb6A+nIxVPxjqDFA9cFu+iArnUKiq7CDIP5lbjZab6/Zz2j7sBRCvuEV6csnvnZYZRawQ==",
-        "dependencies": {
-          "Lueben.Microservice.Api.Models": "3.0.0",
-          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "1.5.1"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.OpenApi": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -54,14 +44,6 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.2"
-        }
-      },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
         }
       },
       "Microsoft.AspNet.WebApi.Client": {
@@ -1726,19 +1708,22 @@
         "type": "Transitive",
         "resolved": "12.0.1",
         "contentHash": "MltVIOIX817Uz/TFkPSaZImdzB86X/k8QY0kFBQx6KI6GsKOk3rIlrptOhb28O0RD2WnibMoYLnCQnqfYduvaw=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.openapi.attributes": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "[1.5.1, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.OpenApi.Attributes": {
-        "type": "Direct",
-        "requested": "[4.0.0, )",
-        "resolved": "4.0.0",
-        "contentHash": "CCKCQeXIWvIA3vOmBdb6A+nIxVPxjqDFA9cFu+iArnUKiq7CDIP5lbjZab6/Zz2j7sBRCvuEV6csnvnZYZRawQ==",
-        "dependencies": {
-          "Lueben.Microservice.Api.Models": "3.0.0",
-          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "1.5.1"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.OpenApi": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -1781,14 +1766,6 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.2"
-        }
-      },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
         }
       },
       "Microsoft.AspNet.WebApi.Client": {
@@ -3424,19 +3401,22 @@
         "type": "Transitive",
         "resolved": "12.0.1",
         "contentHash": "MltVIOIX817Uz/TFkPSaZImdzB86X/k8QY0kFBQx6KI6GsKOk3rIlrptOhb28O0RD2WnibMoYLnCQnqfYduvaw=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.openapi.attributes": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "[1.5.1, )"
+        }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.OpenApi.Attributes": {
-        "type": "Direct",
-        "requested": "[4.0.0, )",
-        "resolved": "4.0.0",
-        "contentHash": "CCKCQeXIWvIA3vOmBdb6A+nIxVPxjqDFA9cFu+iArnUKiq7CDIP5lbjZab6/Zz2j7sBRCvuEV6csnvnZYZRawQ==",
-        "dependencies": {
-          "Lueben.Microservice.Api.Models": "3.0.0",
-          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "1.5.1"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.OpenApi": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -3479,14 +3459,6 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.2"
-        }
-      },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
         }
       },
       "Microsoft.AspNet.WebApi.Client": {
@@ -5122,19 +5094,22 @@
         "type": "Transitive",
         "resolved": "12.0.1",
         "contentHash": "MltVIOIX817Uz/TFkPSaZImdzB86X/k8QY0kFBQx6KI6GsKOk3rIlrptOhb28O0RD2WnibMoYLnCQnqfYduvaw=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.openapi.attributes": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "[1.5.1, )"
+        }
       }
     },
     "net8.0": {
-      "Lueben.Microservice.OpenApi.Attributes": {
-        "type": "Direct",
-        "requested": "[4.0.0, )",
-        "resolved": "4.0.0",
-        "contentHash": "CCKCQeXIWvIA3vOmBdb6A+nIxVPxjqDFA9cFu+iArnUKiq7CDIP5lbjZab6/Zz2j7sBRCvuEV6csnvnZYZRawQ==",
-        "dependencies": {
-          "Lueben.Microservice.Api.Models": "3.0.0",
-          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "1.5.1"
-        }
-      },
       "Microsoft.Azure.Functions.Worker.Extensions.OpenApi": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -5177,14 +5152,6 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Json": "4.6.0",
           "System.Threading.Tasks.Extensions": "4.5.2"
-        }
-      },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "h7bYGcQH5eMhL5z4SACJ+u2bkUZB/q3C8rj4Y3vjieAaS2277KnOGSE2reMMgOVgXVdsVgQnQQ1OWFlk9C8gmA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
         }
       },
       "Microsoft.AspNet.WebApi.Client": {
@@ -6820,6 +6787,19 @@
         "type": "Transitive",
         "resolved": "12.0.1",
         "contentHash": "MltVIOIX817Uz/TFkPSaZImdzB86X/k8QY0kFBQx6KI6GsKOk3rIlrptOhb28O0RD2WnibMoYLnCQnqfYduvaw=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.openapi.attributes": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "[1.5.1, )"
+        }
       }
     }
   }

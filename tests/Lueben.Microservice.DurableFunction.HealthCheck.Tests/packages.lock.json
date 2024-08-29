@@ -1898,7 +1898,7 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.durablefunction.healthcheck": {
+      "lueben.microservice.durablefunction.healthcheck": {
         "type": "Project",
         "dependencies": {
           "Microsoft.Azure.WebJobs.Extensions.DurableTask": "[2.12.0, )",

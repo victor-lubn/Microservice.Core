@@ -1021,7 +1021,7 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.diagnostics": {
+      "lueben.microservice.diagnostics": {
         "type": "Project",
         "dependencies": {
           "JetBrains.Annotations": "[2022.3.1, )"

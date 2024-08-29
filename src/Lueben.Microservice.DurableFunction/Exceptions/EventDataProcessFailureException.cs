@@ -17,9 +17,5 @@ namespace Lueben.Microservice.DurableFunction.Exceptions
         public EventDataProcessFailureException(string message, Exception innerException) : base(message, innerException)
         {
         }
-
-        protected EventDataProcessFailureException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }

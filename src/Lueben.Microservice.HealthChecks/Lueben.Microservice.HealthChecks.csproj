@@ -7,7 +7,6 @@
 	    <Decription>Lueben.Microservice.HealthChecks</Decription>
     </PropertyGroup>
 	<ItemGroup>
-        <PackageReference Include="Lueben.Microservice.Serialization" Version="3.0.0" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.2.0" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="1.3.2" />
         <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.8" />
@@ -19,4 +18,7 @@
 			<BuildAction>Compile</BuildAction>
 		</Content>
 	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.Serialization\Lueben.Microservice.Serialization.csproj" />
+  </ItemGroup>
 </Project>

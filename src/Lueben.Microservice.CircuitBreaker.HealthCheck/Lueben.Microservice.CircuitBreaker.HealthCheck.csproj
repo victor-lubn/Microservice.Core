@@ -16,9 +16,11 @@
     <Compile Remove="C:\Users\Andrei_Hushchyn\.nuget\packages\Lueben.microservice.circuitbreaker\2.0.5\contentFiles\cs\any\CircuitBreaker\DurableCircuitBreakerExternalApi.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.CircuitBreaker" Version="2.0.5" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.14" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="6.0.14" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lueben.Microservice.CircuitBreaker\Lueben.Microservice.CircuitBreaker.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lueben.Microservice.Diagnostics\Lueben.Microservice.Diagnostics.csproj" />

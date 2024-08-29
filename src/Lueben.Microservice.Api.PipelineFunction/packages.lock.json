@@ -2,24 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[2.1.0, )",
-        "resolved": "2.1.0",
-        "contentHash": "BP5WG2I/p0xPjjamg8NOnh/4npVr1TCII8UR3GVlDSag7KO4Nexz7uTNnkf831AoNddOm3Mt36kPYhwl4skpKw==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[2.0.1, )",
-        "resolved": "2.0.1",
-        "contentHash": "NOuU6RHqB6NB5l0KYf+WSVX6393lIFD2MM/L5kZC+g6P1yg6iuZnip9mxeKgh90mxIo4mYFJNxa1T8Wk8QyAeg==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
       "Microsoft.AspNetCore.Http.Abstractions": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -308,8 +290,8 @@
       },
       "Newtonsoft.Json": {
         "type": "Transitive",
-        "resolved": "13.0.2",
-        "contentHash": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg=="
+        "resolved": "13.0.3",
+        "contentHash": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ=="
       },
       "runtime.native.System": {
         "type": "Transitive",
@@ -525,27 +507,21 @@
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         }
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[2.1.0, )",
-        "resolved": "2.1.0",
-        "contentHash": "BP5WG2I/p0xPjjamg8NOnh/4npVr1TCII8UR3GVlDSag7KO4Nexz7uTNnkf831AoNddOm3Mt36kPYhwl4skpKw==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[2.0.1, )",
-        "resolved": "2.0.1",
-        "contentHash": "NOuU6RHqB6NB5l0KYf+WSVX6393lIFD2MM/L5kZC+g6P1yg6iuZnip9mxeKgh90mxIo4mYFJNxa1T8Wk8QyAeg==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
       "Microsoft.AspNetCore.Http.Abstractions": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -823,8 +799,8 @@
       },
       "Newtonsoft.Json": {
         "type": "Transitive",
-        "resolved": "13.0.2",
-        "contentHash": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg=="
+        "resolved": "13.0.3",
+        "contentHash": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ=="
       },
       "runtime.native.System": {
         "type": "Transitive",
@@ -1008,27 +984,21 @@
         "type": "Transitive",
         "resolved": "4.8.0",
         "contentHash": "PSIdcgbyNv7FZvZ1I9Mqy6XZOwstYYMdZiXuHvIyc0gDyPjEhrrP9OvTGDHp+LAHp1RNSLjPYssyqox9+Kt9Ug=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.Api.Models": {
-        "type": "Direct",
-        "requested": "[2.1.0, )",
-        "resolved": "2.1.0",
-        "contentHash": "BP5WG2I/p0xPjjamg8NOnh/4npVr1TCII8UR3GVlDSag7KO4Nexz7uTNnkf831AoNddOm3Mt36kPYhwl4skpKw==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[2.0.1, )",
-        "resolved": "2.0.1",
-        "contentHash": "NOuU6RHqB6NB5l0KYf+WSVX6393lIFD2MM/L5kZC+g6P1yg6iuZnip9mxeKgh90mxIo4mYFJNxa1T8Wk8QyAeg==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
       "Microsoft.AspNetCore.Http.Abstractions": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -1306,8 +1276,8 @@
       },
       "Newtonsoft.Json": {
         "type": "Transitive",
-        "resolved": "13.0.2",
-        "contentHash": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg=="
+        "resolved": "13.0.3",
+        "contentHash": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ=="
       },
       "runtime.native.System": {
         "type": "Transitive",
@@ -1491,6 +1461,18 @@
         "type": "Transitive",
         "resolved": "4.8.0",
         "contentHash": "PSIdcgbyNv7FZvZ1I9Mqy6XZOwstYYMdZiXuHvIyc0gDyPjEhrrP9OvTGDHp+LAHp1RNSLjPYssyqox9+Kt9Ug=="
+      },
+      "lueben.microservice.api.models": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     }
   }

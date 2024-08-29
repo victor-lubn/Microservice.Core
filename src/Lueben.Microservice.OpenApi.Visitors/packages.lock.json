@@ -8,15 +8,6 @@
         "resolved": "11.9.2",
         "contentHash": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg=="
       },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -1532,6 +1523,12 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
       }
     },
     "net6.0": {
@@ -1540,15 +1537,6 @@
         "requested": "[11.9.2, )",
         "resolved": "11.9.2",
         "contentHash": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg=="
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
       },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
@@ -3026,6 +3014,12 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     },
@@ -3036,15 +3030,6 @@
         "resolved": "11.9.2",
         "contentHash": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg=="
       },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -4521,6 +4506,12 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     },
@@ -4531,15 +4522,6 @@
         "resolved": "11.9.2",
         "contentHash": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg=="
       },
-      "Lueben.Microservice.Serialization": {
-        "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": {
         "type": "Direct",
         "requested": "[1.5.1, )",
@@ -6016,6 +5998,12 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     }

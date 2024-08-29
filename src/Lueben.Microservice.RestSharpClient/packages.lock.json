@@ -2,16 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.1": {
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Http": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -218,19 +208,16 @@
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         }
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
+        }
       }
     },
     "net6.0": {
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Http": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -385,19 +372,16 @@
         "type": "Transitive",
         "resolved": "6.0.0",
         "contentHash": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg=="
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
+        }
       }
     },
     "net7.0": {
-      "Lueben.Microservice.RestSharpClient.Abstractions": {
-        "type": "Direct",
-        "requested": "[2.0.5, )",
-        "resolved": "2.0.5",
-        "contentHash": "nPuDfhpoZm9LNVbnSkVorERJ02W6ldJjRLYh8Q25qi/nrcN/y4qVRU7Nl6aVh3rwa5TDq/8bZFIA8azdephuiw==",
-        "dependencies": {
-          "RestSharp": "108.0.3",
-          "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
       "Microsoft.Extensions.Http": {
         "type": "Direct",
         "requested": "[2.2.0, )",
@@ -552,6 +536,13 @@
         "type": "Transitive",
         "resolved": "6.0.0",
         "contentHash": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg=="
+      },
+      "lueben.microservice.restsharpclient.abstractions": {
+        "type": "Project",
+        "dependencies": {
+          "RestSharp": "[108.0.3, )",
+          "System.Text.Encodings.Web": "[6.0.0, )"
+        }
       }
     }
   }

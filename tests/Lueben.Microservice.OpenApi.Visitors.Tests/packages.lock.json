@@ -57,14 +57,6 @@
         "resolved": "11.9.2",
         "contentHash": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg=="
       },
-      "Lueben.Microservice.Serialization": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "C1FysaCKVvrOikEMzuTeLnGvicmAT9JjFx3VcEkP+xIE5OqCClbTZqAJNQyEwC5sOeBJkok1AEqbi2iPA5ttCA==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        }
-      },
       "Microsoft.AspNet.WebApi.Client": {
         "type": "Transitive",
         "resolved": "5.2.8",
@@ -1599,12 +1591,18 @@
           "xunit.extensibility.core": "[2.4.1]"
         }
       },
-      "Lueben.microservice.openapi.visitors": {
+      "lueben.microservice.openapi.visitors": {
         "type": "Project",
         "dependencies": {
           "FluentValidation": "[11.9.2, )",
           "Lueben.Microservice.Serialization": "[3.0.0, )",
           "Microsoft.Azure.WebJobs.Extensions.OpenApi.Core": "[1.5.1, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     }

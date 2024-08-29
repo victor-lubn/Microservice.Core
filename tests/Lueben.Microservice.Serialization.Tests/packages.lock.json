@@ -1038,7 +1038,7 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.serialization": {
+      "lueben.microservice.serialization": {
         "type": "Project",
         "dependencies": {
           "Newtonsoft.Json": "[13.0.3, )"

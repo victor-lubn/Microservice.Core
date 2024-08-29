@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	  <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks>
 	  <PackageId>Lueben.Microservice.RestSharpClient.Factory</PackageId>
 	  <Version>3.0.2</Version>
 	  <Title>Lueben.Microservice.RestSharpClient.Factory</Title>
@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="2.0.2" />
-    <PackageReference Include="Lueben.Microservice.Interceptors" Version="2.0.3" />
-    <PackageReference Include="Lueben.Microservice.RestSharpClient" Version="4.1.1" />
-    <PackageReference Include="Lueben.Microservice.RestSharpClient.Authentication" Version="2.0.5" />
-    <PackageReference Include="Lueben.Microservice.Serialization" Version="2.0.1" />
+    <ProjectReference Include="..\Lueben.Microservice.Interceptors\Lueben.Microservice.Interceptors.csproj"/>
+    <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.RestSharpClient\Lueben.Microservice.RestSharpClient.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.RestSharpClient.Authentication\Lueben.Microservice.RestSharpClient.Authentication.csproj" />
+    <ProjectReference Include="..\Lueben.Microservice.Serialization\Lueben.Microservice.Serialization.csproj" />
   </ItemGroup>
 
 </Project>

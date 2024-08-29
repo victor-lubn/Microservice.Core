@@ -65,22 +65,6 @@
           "System.Diagnostics.EventLog": "6.0.0"
         }
       },
-      "Lueben.Microservice.Api.Models": {
-        "type": "Transitive",
-        "resolved": "2.1.0",
-        "contentHash": "BP5WG2I/p0xPjjamg8NOnh/4npVr1TCII8UR3GVlDSag7KO4Nexz7uTNnkf831AoNddOm3Mt36kPYhwl4skpKw==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
-      "Lueben.Microservice.Serialization": {
-        "type": "Transitive",
-        "resolved": "2.0.1",
-        "contentHash": "NOuU6RHqB6NB5l0KYf+WSVX6393lIFD2MM/L5kZC+g6P1yg6iuZnip9mxeKgh90mxIo4mYFJNxa1T8Wk8QyAeg==",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        }
-      },
       "Microsoft.AspNetCore.Http.Abstractions": {
         "type": "Transitive",
         "resolved": "2.2.0",
@@ -419,8 +403,8 @@
       },
       "Newtonsoft.Json": {
         "type": "Transitive",
-        "resolved": "13.0.2",
-        "contentHash": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg=="
+        "resolved": "13.0.3",
+        "contentHash": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ=="
       },
       "NuGet.Frameworks": {
         "type": "Transitive",
@@ -1356,16 +1340,28 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.api.pipelinefunction": {
+      "lueben.microservice.api.models": {
         "type": "Project",
         "dependencies": {
-          "Lueben.Microservice.Api.Models": "[2.1.0, )",
-          "Lueben.Microservice.Serialization": "[2.0.1, )",
+          "Newtonsoft.Json": "[13.0.3, )"
+        }
+      },
+      "lueben.microservice.api.pipelinefunction": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Api.Models": "[3.0.0, )",
+          "Lueben.Microservice.Serialization": "[3.0.0, )",
           "Microsoft.AspNetCore.Http.Abstractions": "[2.2.0, )",
           "Microsoft.Azure.Functions.Extensions": "[1.1.0, )",
           "Microsoft.Azure.WebJobs": "[3.0.37, )",
           "System.Diagnostics.DiagnosticSource": "[6.0.0, )",
           "System.Text.Encodings.Web": "[6.0.0, )"
+        }
+      },
+      "lueben.microservice.serialization": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "[13.0.3, )"
         }
       }
     }

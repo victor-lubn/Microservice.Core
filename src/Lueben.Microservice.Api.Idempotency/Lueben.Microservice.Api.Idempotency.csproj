@@ -10,10 +10,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Azure.Data.Tables" Version="12.9.0" />
-		<PackageReference Include="Lueben.Microservice.Api.Middleware" Version="1.0.3" />
-		<PackageReference Include="Lueben.Microservice.Diagnostics" Version="3.0.0" />
-		<PackageReference Include="Lueben.Microservice.Extensions.Configuration" Version="3.0.0" />
-		<PackageReference Include="Lueben.Microservice.Api.ValidationFunction" Version="3.0.1" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.3.1" />
 		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
 	</ItemGroup>
@@ -22,5 +18,12 @@
 		<Content Include="Functions\IdempotencyCleanUpTimerFunction.cs" Pack="true" PackagePath="contentFiles\cs\any\Functions">
 			<BuildAction>Compile</BuildAction>
 		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Lueben.Microservice.Api.Middleware\Lueben.Microservice.Api.Middleware.csproj" />
+	  <ProjectReference Include="..\Lueben.Microservice.Api.ValidationFunction\Lueben.Microservice.Api.ValidationFunction.csproj" />
+	  <ProjectReference Include="..\Lueben.Microservice.Diagnostics\Lueben.Microservice.Diagnostics.csproj" />
+	  <ProjectReference Include="..\Lueben.Microservice.Extensions.Configuration\Lueben.Microservice.Extensions.Configuration.csproj" />
 	</ItemGroup>
 </Project>

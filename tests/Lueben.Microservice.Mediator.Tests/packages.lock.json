@@ -1349,7 +1349,7 @@
           "xunit.extensibility.core": "[2.4.1]"
         }
       },
-      "Lueben.microservice.mediator": {
+      "lueben.microservice.mediator": {
         "type": "Project",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "[8.0.0, )"

@@ -1963,7 +1963,7 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "Lueben.microservice.circuitbreaker": {
+      "lueben.microservice.circuitbreaker": {
         "type": "Project",
         "dependencies": {
           "Microsoft.Azure.Functions.Extensions": "[1.1.0, )",

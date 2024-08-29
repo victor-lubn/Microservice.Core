@@ -143,23 +143,6 @@
           "Grpc.Core.Api": "2.60.0"
         }
       },
-      "Lueben.Microservice.Diagnostics": {
-        "type": "Transitive",
-        "resolved": "2.0.2",
-        "contentHash": "8ktpjQuPXptgXt0bUT0qao7ORP2scKT+eyWkIhS/FtihobLI+0M+QCpgyeGcxOoqthxf5mI/cAKD2BQi2IES3Q==",
-        "dependencies": {
-          "JetBrains.Annotations": "2022.3.1"
-        }
-      },
-      "Lueben.Microservice.Extensions.Configuration": {
-        "type": "Transitive",
-        "resolved": "3.0.0",
-        "contentHash": "uZpB4CIQg0KbmVamuHY31tey8RPcy6ZGmbIpfffoXthWJwatwdfOiWfAs1fKZsBxt3jK+zKaSLZTsyfE3GYInQ==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
-        }
-      },
       "JetBrains.Annotations": {
         "type": "Transitive",
         "resolved": "2022.3.1",
@@ -1523,10 +1506,23 @@
           "xunit.extensibility.core": "[2.9.0]"
         }
       },
-      "Lueben.microservice.json.encrypt": {
+      "lueben.microservice.diagnostics": {
         "type": "Project",
         "dependencies": {
-          "Lueben.Microservice.Diagnostics": "[2.0.2, )",
+          "JetBrains.Annotations": "[2022.3.1, )"
+        }
+      },
+      "lueben.microservice.extensions.configuration": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "[8.0.0, )",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, )"
+        }
+      },
+      "lueben.microservice.json.encrypt": {
+        "type": "Project",
+        "dependencies": {
+          "Lueben.Microservice.Diagnostics": "[3.0.0, )",
           "Lueben.Microservice.Extensions.Configuration": "[3.0.0, )",
           "Microsoft.Azure.Functions.Worker.Core": "[1.19.0, )",
           "Newtonsoft.Json": "[13.0.3, )"

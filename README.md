@@ -12,24 +12,99 @@
 - **Serverless-Ready:** Seamless integration with Azure Functions for event-driven, serverless applications.
 - **Monitoring and Logging:** Built-in support for Application Insights to monitor performance and diagnose issues in real-time.
 
-### Getting Started
+# Nuget packages solution
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/Lueben.Microservice.Core.git
-   ```
-2. **Restore NuGet packages:**
-   ```bash
-   dotnet restore
-   ```
-3. **Build the solution:**
-   ```bash
-   dotnet build
-   ```
-4. **Run the tests (if applicable):**
-   ```bash
-   dotnet test
-   ```
+These packages can be easily shared between different projects.
+All the necessary metadata for all the Nuget packages is defined in _Nuget specification file_. The example of this file is listed below:
+
+```
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Lueben.Microservice.CircuitBreaker</id>
+        <version>1.0.2</version>
+        <title>Lueben.Microservice.CircuitBreaker</title>
+        <authors>Lueben Joinery</authors>
+        <description>Lueben.Microservice.CircuitBreaker</description>
+        <contentFiles>
+            <files include="cs/**/*.*" buildAction="Compile" /> 
+        </contentFiles>
+        <dependencies>
+            <dependency id="Polly" version="7.2.1" />
+            <dependency id="Polly.Caching.Memory" version="3.0.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\netstandard2.1\*.dll" target="lib\any" />
+        <file src="CircuitBreakerFunctions.cs" target="contentFiles\cs\any\CircuitBreaker" />
+        <file src="DurableCircuitBreakerExternalApi.cs" target="contentFiles\cs\any\CircuitBreaker" />
+    </files>
+</package>
+```
+Apart from metadata of the Nuget package this Nuget specification file also stores the information about all the necessary dependencies that this Nuget package uses as well as the collection of the files that should be added to the project when this Nuget package is being installed.
+
+The path to the Nuget specification file is defined in _csproj_ _file_ for all the projects inside our solution.
+
+# Nuget Feed
+
+All the packages are stored in the Nuget feed. For we use Azure DevOps _Artifacts_ as the main Nuget feed. 
+
+This Nuget feed consists of these packages:
+- _Lueben.Microservice.ApplicationInsights_ - the package that helps track events to Application Insights;
+- _Lueben.Microservice.CircuitBreaker_ - the implementation of durable circuit braker pattern;
+- _Lueben.Microservice.Mediator_ - the implementation of Mediator pattern;
+- _Lueben.Microservice.OpenApi_ - the package that helps expose swagger documentation;
+- _Lueben.Microservice.RetryPolicy_ - the implementation of retry pattern.
+
+# Nuget config file
+
+Because of the fact that in we are using a NuGet packages from a _private Azure DevOps package feed_, we cannot build the solution in Visual Studio because we are not authorized to access the feed.
+
+For solutions with **NuGet.config** included it is enough to install Azure Artifacts Credential Provider from [this page](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+In order to get access to a private Azure DevOps package feed a **Personal Access Token** should be generated. All the steps that should be taken in order to generate Personal Access Token you can find in [this page](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page)
+
+The next step in order to be able to restore the NuGet package from the private feed is to add a **nuget.config** file to the root folder of the solution. The example of the nuget config file is the following:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+        <add key="NameOfYourFeed" value="path to your nuget/index.json" />
+    </packageSources>
+</configuration>
+```
+
+After you've generated the PAT and created a Nuget config file, this token should be added to nuget config file. The Visual studio will grab this token from nuget config file while authenticating to a private Nuget Feed.
+
+There are two ways to get it done:
+
+## Adding PAT to local nuget config file:
+
+You can add you PAT to nuget config file in section _packageSourceCredentials_. Here is the example of this section
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <!-- packageSources -->
+    <packageSourceCredentials>
+        <NameOfYourFeed>
+            <add key="Username" value="gnabber"/>
+            <add key="ClearTextPassword" value="YourPassword"/>
+        </NameOfYourFeed>
+    </packageSourceCredentials>
+</configuration>
+```
+
+## Adding PAT to global nuget config file:
+
+You can also add the generated PAT to global nuget config file that is placed at _%appdata%\Roaming\NuGet\NuGet.Config_. You need to take two steps to make it done:
+
+   a. Go to the [NuGet page](https://www.nuget.org/downloads) and download nuget.exe.
+   b. Register the private NuGet feed with the following command
+
+`nuget.exe sources Add -Name "MyFeedName" -Source "https://myfeedurl" -username unused -password MyAccessToken`
 
 ---
 

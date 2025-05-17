@@ -1,8 +1,8 @@
-# Microservice.Core
+# Lueben.ServiceCoreLib
 
 ### Overview
 
-**Lueben.Microservice.Core** is a comprehensive .NET Core solution designed to provide a set of reusable libraries, utilities, and components for building scalable, maintainable microservices and Azure Functions. This repository contains a collection of core shared projects that serve as the foundation for various microservices, APIs, and Azure Function-based projects within an enterprise-level architecture.
+**Lueben.ServiceCoreLib** is a comprehensive .NET Core solution designed to provide a set of reusable libraries, utilities, and components for building scalable, maintainable microservices and Azure Functions. This repository contains a collection of core shared projects that serve as the foundation for various microservices, APIs, and Azure Function-based projects within an enterprise-level architecture.
 
 ### Features
 
@@ -21,11 +21,11 @@ All the necessary metadata for all the Nuget packages is defined in _Nuget speci
 <?xml version="1.0"?>
 <package>
     <metadata>
-        <id>Lueben.Microservice.CircuitBreaker</id>
+        <id>Lueben.ServiceCoreLib.CircuitBreaker</id>
         <version>1.0.2</version>
         <title>Lueben.Microservice.CircuitBreaker</title>
-        <authors>Lueben Joinery</authors>
-        <description>Lueben.Microservice.CircuitBreaker</description>
+        <authors>Lueben</authors>
+        <description>Lueben.ServiceCoreLib.CircuitBreaker</description>
         <contentFiles>
             <files include="cs/**/*.*" buildAction="Compile" /> 
         </contentFiles>
@@ -50,11 +50,11 @@ The path to the Nuget specification file is defined in _csproj_ _file_ for all t
 All the packages are stored in the Nuget feed. For we use Azure DevOps _Artifacts_ as the main Nuget feed. 
 
 This Nuget feed consists of these packages:
-- _Lueben.Microservice.ApplicationInsights_ - the package that helps track events to Application Insights;
-- _Lueben.Microservice.CircuitBreaker_ - the implementation of durable circuit braker pattern;
-- _Lueben.Microservice.Mediator_ - the implementation of Mediator pattern;
-- _Lueben.Microservice.OpenApi_ - the package that helps expose swagger documentation;
-- _Lueben.Microservice.RetryPolicy_ - the implementation of retry pattern.
+- _Lueben.ServiceCoreLib.ApplicationInsights_ - the package that helps track events to Application Insights;
+- _Lueben.ServiceCoreLib.CircuitBreaker_ - the implementation of durable circuit braker pattern;
+- _Lueben.ServiceCoreLib.Mediator_ - the implementation of Mediator pattern;
+- _Lueben.ServiceCoreLib.OpenApi_ - the package that helps expose swagger documentation;
+- _Lueben.ServiceCoreLib.RetryPolicy_ - the implementation of retry pattern.
 
 # Nuget config file
 
